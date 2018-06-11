@@ -1,0 +1,76 @@
+{
+  "layer_shapes" : {
+    "layer_5_dense__activation___output" : {
+      "k" : 128,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "layer_1_max_output" : {
+      "k" : 64,
+      "w" : 24,
+      "n" : 1,
+      "h" : 24
+    },
+    "layer_3_conv2d__activation___output" : {
+      "k" : 256,
+      "w" : 12,
+      "n" : 1,
+      "h" : 12
+    },
+    "flatten_1_output" : {
+      "k" : 9216,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "layer_2_conv2d__activation___output" : {
+      "k" : 128,
+      "w" : 24,
+      "n" : 1,
+      "h" : 24
+    },
+    "layer_2_max_output" : {
+      "k" : 128,
+      "w" : 12,
+      "n" : 1,
+      "h" : 12
+    },
+    "classLabelProbs" : {
+      "k" : 7,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "layer_1_conv2d__activation___output" : {
+      "k" : 64,
+      "w" : 48,
+      "n" : 1,
+      "h" : 48
+    },
+    "output_output" : {
+      "k" : 7,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "image" : {
+      "k" : 1,
+      "w" : 48,
+      "n" : 1,
+      "h" : 48
+    },
+    "layer_4_dense__activation___output" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "layer_3_max_output" : {
+      "k" : 256,
+      "w" : 6,
+      "n" : 1,
+      "h" : 6
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "layer_shapes" : {
+    "conv2d_13__activation___output" : {
+      "k" : 16,
+      "w" : 86,
+      "n" : 1,
+      "h" : 86
+    },
+    "conv2d_14__activation___output" : {
+      "k" : 32,
+      "w" : 43,
+      "n" : 1,
+      "h" : 43
+    },
+    "conv2d_15__activation___output" : {
+      "k" : 64,
+      "w" : 21,
+      "n" : 1,
+      "h" : 21
+    },
+    "conv2d_16__activation___output" : {
+      "k" : 128,
+      "w" : 10,
+      "n" : 1,
+      "h" : 10
+    },
+    "max_pooling2d_15_output" : {
+      "k" : 64,
+      "w" : 10,
+      "n" : 1,
+      "h" : 10
+    },
+    "max_pooling2d_13_output" : {
+      "k" : 16,
+      "w" : 43,
+      "n" : 1,
+      "h" : 43
+    },
+    "image" : {
+      "k" : 1,
+      "w" : 256,
+      "n" : 1,
+      "h" : 256
+    },
+    "classActivations" : {
+      "k" : 512,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "max_pooling2d_16_output" : {
+      "k" : 128,
+      "w" : 5,
+      "n" : 1,
+      "h" : 5
+    },
+    "max_pooling2d_14_output" : {
+      "k" : 32,
+      "w" : 21,
+      "n" : 1,
+      "h" : 21
+    },
+    "flatten_4_output" : {
+      "k" : 3200,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    }
+  }
+}

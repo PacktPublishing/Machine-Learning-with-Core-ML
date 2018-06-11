@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LanguageTutor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TXu-Im-ctD" userLabel="VideoPreview" customClass="CapturePreviewView" customModule="LanguageTutor" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlJ-Bg-o5M">
+                                <rect key="frame" x="0.0" y="555" width="375" height="92"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.2870558647260274" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="6xY-Me-Neu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TXu-Im-ctD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0R0-g0-hBj"/>
+                            <constraint firstItem="jlJ-Bg-o5M" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5WD-h8-3Vp"/>
+                            <constraint firstItem="TXu-Im-ctD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6Cr-lr-CSY"/>
+                            <constraint firstItem="TXu-Im-ctD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FCS-cF-POr"/>
+                            <constraint firstItem="jlJ-Bg-o5M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QUd-dX-IF2"/>
+                            <constraint firstItem="TXu-Im-ctD" firstAttribute="bottom" secondItem="jlJ-Bg-o5M" secondAttribute="bottom" constant="20" id="ldJ-h8-eA1"/>
+                            <constraint firstItem="TXu-Im-ctD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="t81-21-PUD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="classifiedLabel" destination="jlJ-Bg-o5M" id="tgf-2f-kcY"/>
+                        <outlet property="previewView" destination="TXu-Im-ctD" id="Aoy-Cu-LBR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
