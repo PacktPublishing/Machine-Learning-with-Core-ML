@@ -45,7 +45,7 @@ extension CIImage{
      CVPixelBuffer is a Core Video pixel buffer (or just image buffer) that holds pixels in main memory. Applications generating frames, compressing or decompressing video, or using Core Image can all make use of Core Video pixel buffers.
      https://developer.apple.com/documentation/corevideo/cvpixelbuffer
     */
-    func toPixelBuffer(context:CIContext, gray:Bool=true) -> CVPixelBuffer?{
+    func toPixelBuffer(context:CIContext, gray:Bool=false) -> CVPixelBuffer?{
         // Create a dictionary requesting Core Graphics compatibility
         let attributes = [
             kCVPixelBufferCGImageCompatibilityKey:kCFBooleanTrue,

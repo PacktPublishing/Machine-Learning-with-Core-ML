@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		8404AC0F20A24A8700E1DAEA /* CaptureVideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404AC0E20A24A8700E1DAEA /* CaptureVideoPreviewView.swift */; };
 		845DA74A1FCEB2D400B8D0C6 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DA7491FCEB2D400B8D0C6 /* VideoCapture.swift */; };
-		849657711FD4431500224E2A /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 849657701FD4431400224E2A /* Inceptionv3.mlmodel */; };
 		84B1B1271FCD582100AD83F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1B1261FCD582100AD83F7 /* AppDelegate.swift */; };
 		84B1B1291FCD582100AD83F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1B1281FCD582100AD83F7 /* ViewController.swift */; };
 		84B1B12C1FCD582100AD83F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B1B12A1FCD582100AD83F7 /* Main.storyboard */; };
 		84B1B12E1FCD582100AD83F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B1B12D1FCD582100AD83F7 /* Assets.xcassets */; };
 		84B1B1311FCD582100AD83F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B1B12F1FCD582100AD83F7 /* LaunchScreen.storyboard */; };
 		84B1B1391FCD622900AD83F7 /* CIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1B1381FCD622900AD83F7 /* CIImage.swift */; };
+		84F14A5620D3FD79003B1505 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 84F14A5520D3FD79003B1505 /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +24,6 @@
 		845DA74C1FCEB2F400B8D0C6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		845DA74D1FCEB2FB00B8D0C6 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
 		845DA74E1FCEB30A00B8D0C6 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		849657701FD4431400224E2A /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/CoreMLModels/Inceptionv3.mlmodel"; sourceTree = "<group>"; };
 		84B1B1231FCD582100AD83F7 /* ObjectRecognition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectRecognition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B1B1261FCD582100AD83F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84B1B1281FCD582100AD83F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,6 +32,7 @@
 		84B1B1301FCD582100AD83F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84B1B1321FCD582100AD83F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84B1B1381FCD622900AD83F7 /* CIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIImage.swift; sourceTree = "<group>"; };
+		84F14A5520D3FD79003B1505 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Machine-Learning-with-Core-ML/CoreMLModels/Inceptionv3.mlmodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +76,8 @@
 		84B1B1251FCD582100AD83F7 /* ObjectRecognition */ = {
 			isa = PBXGroup;
 			children = (
+				84F14A5520D3FD79003B1505 /* Inceptionv3.mlmodel */,
 				8404AC0E20A24A8700E1DAEA /* CaptureVideoPreviewView.swift */,
-				849657701FD4431400224E2A /* Inceptionv3.mlmodel */,
 				84B1B1261FCD582100AD83F7 /* AppDelegate.swift */,
 				84B1B1281FCD582100AD83F7 /* ViewController.swift */,
 				84B1B12A1FCD582100AD83F7 /* Main.storyboard */,
@@ -163,7 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				845DA74A1FCEB2D400B8D0C6 /* VideoCapture.swift in Sources */,
-				849657711FD4431500224E2A /* Inceptionv3.mlmodel in Sources */,
+				84F14A5620D3FD79003B1505 /* Inceptionv3.mlmodel in Sources */,
 				8404AC0F20A24A8700E1DAEA /* CaptureVideoPreviewView.swift in Sources */,
 				84B1B1391FCD622900AD83F7 /* CIImage.swift in Sources */,
 				84B1B1291FCD582100AD83F7 /* ViewController.swift in Sources */,
@@ -305,10 +305,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9FMGJU3F2A;
+				DEVELOPMENT_TEAM = F8HK8S6JN8;
 				INFOPLIST_FILE = "$(SRCROOT)/ObjectRecognition/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mlwithcoreml.chapter3.ObjectRecognition;
+				PRODUCT_BUNDLE_IDENTIFIER = packtpub.mlwithcoreml.ObjectRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,10 +320,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9FMGJU3F2A;
+				DEVELOPMENT_TEAM = F8HK8S6JN8;
 				INFOPLIST_FILE = "$(SRCROOT)/ObjectRecognition/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mlwithcoreml.chapter3.ObjectRecognition;
+				PRODUCT_BUNDLE_IDENTIFIER = packtpub.mlwithcoreml.ObjectRecognition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
