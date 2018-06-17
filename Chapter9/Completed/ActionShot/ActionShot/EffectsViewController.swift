@@ -47,7 +47,7 @@ class EffectsViewController: UIViewController {
         
         self.showEffectAndActivityIndicator()
         
-        self.imageProcessor.processFrames()                
+        self.imageProcessor.processFrames()
     }
     
     /** Look busy **/
@@ -60,7 +60,7 @@ class EffectsViewController: UIViewController {
         visualEffectsView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.view.addSubview(visualEffectsView)
         
-        // Start animating the activity indicator 
+        // Start animating the activity indicator
         if let activityIndicatorView = self.activityIndicatorView{
             self.view.bringSubview(toFront: activityIndicatorView)
             activityIndicatorView.startAnimating()
@@ -71,7 +71,7 @@ class EffectsViewController: UIViewController {
 // MARK: - ImageProcessorDelegate
 
 extension EffectsViewController : ImageProcessorDelegate{
-
+    
     /* Called when a frame has finished being processed */
     func onImageProcessorFinishedProcessingFrame(
         status:Int,
@@ -98,7 +98,7 @@ extension EffectsViewController : ImageProcessorDelegate{
         if let image = image{
             self.imageView?.image = UIImage(ciImage: image)
         } else{
-            self.imageView?.image = nil 
+            self.imageView?.image = nil
         }
     }
 }
@@ -125,6 +125,12 @@ extension EffectsViewController{
         
         imageView.contentMode = .scaleAspectFit
         self.imageView = imageView
+        
+        // set the image to be the last image available in our image processor
+        if self.imageProcessor.frames.count > 0,
+            let lastFrame = self.imageProcessor.frames.last{
+            self.imageView?.image = UIImage(ciImage: lastFrame)
+        }
         
         // Close button
         let closeButtonImage = UIImage(named: "close_button")

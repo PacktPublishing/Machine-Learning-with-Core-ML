@@ -10,6 +10,7 @@ import UIKit
 import Vision
 import CoreML
 import CoreImage
+import Photos
 
 protocol ImageProcessorDelegate : class{
     /* Called when a frame has finished being processed */
@@ -79,6 +80,11 @@ class ImageProcessor{
     
     var targetSize = CGSize(width: 448, height: 448)
     
+    /**
+     Any segmentation that has an area less that this (relative to the frame size)
+     is ignored
+     **/
+    var minMaskArea:CGFloat = 0.005
     /* Making accessing data thread safe */
     let lock = NSLock()
     /* Holds the original frames */
@@ -115,7 +121,7 @@ class ImageProcessor{
     }
     
     init(){
-        
+        self.processedImages.reserveCapacity(50) // ~ 10 fps * 5 seconds
     }
     
     public func addFrame(frame:CIImage){
@@ -154,11 +160,11 @@ extension ImageProcessor{
     
     func processesingNextFrame(){
         self.isProcessingImage = true
-                
+        
         guard let nextFrame = self.getNextFrame() else{
             self.isProcessingImage = false
             return
-        }    
+        }
         
         // Resize and crop; start by calculating the appropriate offsets
         var ox : CGFloat = 0
@@ -215,12 +221,12 @@ extension ImageProcessor{
                         processedFrames: processedFramesCount,
                         framesRemaining: framesReaminingCount)
                 }
-            return
+                return
         }
-
+        
         let options = [
             kCIImageColorSpace:CGColorSpaceCreateDeviceGray()
-        ] as [String:Any]
+            ] as [String:Any]
         
         let ciImage = CIImage(
             cvPixelBuffer: pixelBufferObservations[0].pixelBuffer,
@@ -252,10 +258,15 @@ extension ImageProcessor{
 
 extension ImageProcessor{
     
+    func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
+    }
+    
     func compositeFrames(){
         
         // Filter frames based on bounding box positioning
-        let selectedIndicies = self.getIndiciesOfBestFrames()
+        var selectedIndicies = self.getIndiciesOfBestFrames()
         
         // If no indicies we returned then exist, passing the final
         // image as a fallback
@@ -270,7 +281,22 @@ extension ImageProcessor{
         }
         
         // Iterate through all indicies compositing the final image
-        let finalImage = self.processedImages[selectedIndicies.last!]
+        var finalImage = self.processedImages[selectedIndicies.last!]
+        selectedIndicies.removeLast()
+        
+        let alphaStep : CGFloat = 1.0 / CGFloat(selectedIndicies.count)
+        
+        for i in selectedIndicies{
+            let image = self.processedImages[i]
+            let mask = self.processedMasks[i]
+            
+            let extent = image.extent
+            let alpha = CGFloat(i + 1) * alphaStep
+            let arguments = [finalImage, image, mask, min(alpha, 1.0)] as [Any]
+            if let compositeFrame = self.compositeKernel?.apply(extent: extent, arguments: arguments){
+                finalImage = compositeFrame
+            }
+        }
         
         DispatchQueue.main.async {
             self.delegate?.onImageProcessorFinishedComposition(
@@ -280,20 +306,25 @@ extension ImageProcessor{
     }
     
     func getIndiciesOfBestFrames() -> [Int]{
+        guard self.processedMasks.count > 1 else{
+            return [0]
+        }
+        
         var selectedIndicies = [Int]()
-
+        
         var previousBoundingBox : CGRect?
-
+        
         let dir = self.getDominateDirection()
-
+        
         // Assume the last frame is the 'Hero' frame i.e. work backwards
         for i in (0..<self.processedMasks.count).reversed(){
             let mask = self.processedMasks[i]
             
+            // Ignore any frame with the subject doesn't dominate the image
             guard let maskBB = mask.getContentBoundingBox(),
-                maskBB.width < mask.extent.width * 0.7,
-                maskBB.height < mask.extent.height * 0.7 else {
-                continue
+                (maskBB.width * maskBB.height) >= (mask.extent.width * mask.extent.height) * self.minMaskArea
+                else {
+                    continue
             }
             
             if previousBoundingBox == nil{
@@ -305,56 +336,62 @@ extension ImageProcessor{
                     ? abs(previousBoundingBox!.center.x - maskBB.center.x)
                     : abs(previousBoundingBox!.center.y - maskBB.center.y)
                 let bounds = abs(dir.x) >= abs(dir.y)
-                    ? (previousBoundingBox!.width + maskBB.width) / 4.0
-                    : (previousBoundingBox!.height + maskBB.height) / 4.0
+                    ? (previousBoundingBox!.width + maskBB.width) / 2.0
+                    : (previousBoundingBox!.height + maskBB.height) / 2.0
                 
-                if distance > bounds * 0.5{
+                // Add threshold to allow for overlap and account for
+                // padding
+                if distance > bounds * 0.15{
                     previousBoundingBox = maskBB
                     selectedIndicies.append(i)
                 }
             }
             
         }
-
+        
         return selectedIndicies.reversed()
     }
     
     func getDominateDirection() -> CGPoint{
         var dir = CGPoint(x: 0, y: 0)
-
+        
+        var startIdx : Int = 0
         var startCenter : CGPoint?
         var endCenter : CGPoint?
-
+        
         // Find startCenter
         for i in 0..<self.processedMasks.count{
             let mask = self.processedMasks[i]
             
-            guard let maskBB = mask.getContentBoundingBox() else {
-                continue
+            guard let maskBB = mask.getContentBoundingBox(),
+                (maskBB.width * maskBB.height) >= (mask.extent.width * mask.extent.height) * self.minMaskArea
+                else {
+                    continue
             }
             
             startCenter = maskBB.center
+            startIdx = i
             break
         }
-
+        
         // Find endCenter
-        for i in (0..<self.processedMasks.count).reversed(){
+        for i in (startIdx..<self.processedMasks.count).reversed(){
             let mask = self.processedMasks[i]
             
             guard let maskBB = mask.getContentBoundingBox(),
-               maskBB.width < mask.extent.width * 0.7,
-               maskBB.height < mask.extent.height * 0.7 else {
-                continue
+                (maskBB.width * maskBB.height) >= (mask.extent.width * mask.extent.height) * self.minMaskArea
+                else {
+                    continue
             }
             
             endCenter = maskBB.center
             break
         }
-
+        
         if let startCenter = startCenter, let endCenter = endCenter, startCenter != endCenter{
             dir = (startCenter - endCenter).normalised
         }
-
+        
         return dir
     }
 }

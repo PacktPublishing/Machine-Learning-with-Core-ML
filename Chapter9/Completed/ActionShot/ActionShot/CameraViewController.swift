@@ -29,24 +29,14 @@ class CameraViewController: UIViewController {
      a) the user  lifts their finger
      b) the time elapses
      */
-    var capturingFrames : Bool = false{
-        didSet{
-            if capturingFrames{
-                captureTimestamp = Date()
-            }
-        }
-    }
-    
-    let captureMaxTime : TimeInterval = 3.0
-    
-    var captureTimestamp : Date?
+    var capturingFrames : Bool = false
     
     /**
      Instantiate an instance of ImageProcessor; the class which encapsulates the
      functionality for performing the 'action shot' effect
-    **/
+     **/
     let imageProcessor = ImageProcessor()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -91,7 +81,7 @@ class CameraViewController: UIViewController {
         
         effectCV.delegate = self
         effectCV.imageProcessor = self.imageProcessor
-        effectCV.modalPresentationStyle = .overCurrentContext
+        effectCV.modalPresentationStyle = .overCurrentContext        
         
         present(effectCV, animated: false) {
             
@@ -109,23 +99,14 @@ extension CameraViewController : VideoCaptureDelegate{
         timestamp:CMTime){
         
         // Unwrap the parameter pixxelBuffer and cast to image; exit early if either are null
-        guard capturingFrames, let pixelBuffer = pixelBuffer else{
-            print("WARNING: onFrameCaptured; null pixelBuffer")
+        guard capturingFrames, let pixelBuffer = pixelBuffer?.clone() else{
             return
         }
         
-        // Create CIImage from pixel buffer 
+        // Create CIImage from pixel buffer
         let frame = CIImage(cvPixelBuffer:pixelBuffer)
         
         self.imageProcessor.addFrame(frame: frame)
-        
-        // Test elapsed time; we have added a limit - force stopping
-        // if we have exceeded this limit 
-        let et = Date().timeIntervalSince(self.captureTimestamp!)
-        
-        if et >= self.captureMaxTime{
-            self.showEffect()
-        }
     }
 }
 
@@ -157,7 +138,7 @@ extension CameraViewController{
                    width: actionButtonSize.width,
                    height: actionButtonSize.height))
         self.view.addSubview(actionButton)
-        actionButton.setImage(UIImage(named: "action_button"), for: .normal)
+        actionButton.setImage(UIImage(named: "actionButton"), for: .normal)
         actionButton.addTarget(self,
                                action: #selector(CameraViewController.onActionButtonTappedDown(_:)),
                                for: UIControlEvents.touchDown)
@@ -181,14 +162,13 @@ extension CameraViewController{
     }
     
     @objc func onActionButtonTappedDown(_ sender:UIButton){
-        //guard !self.capturingFrames, self.videoCapture.isCapturing else{ return }
         guard !self.capturingFrames else{ return }
         
         // Reset/Prepare imageProcessor; essentially removing all previous
         // frames and setting it's current frame index to 0)
         self.imageProcessor.reset()
         
-        capturingFrames = true
+        self.capturingFrames = true
     }
     
     @objc func onActionButtonTappedUp(_ sender:UIButton){
@@ -200,10 +180,12 @@ extension CameraViewController{
     @objc func onFlipCameraButtonTapped(_ sender:UIButton){
         stopCamera()
         
-        videoCapture.cameraPostion == AVCaptureDevice.Position.front ?
-            AVCaptureDevice.Position.back : AVCaptureDevice.Position.front
+        // Flip camera
+        videoCapture.cameraPostion =
+            videoCapture.cameraPostion == AVCaptureDevice.Position.front ?
+                AVCaptureDevice.Position.back : AVCaptureDevice.Position.front
         
-        videoCapture.startCapturing()
+        startCamera()
     }
 }
 

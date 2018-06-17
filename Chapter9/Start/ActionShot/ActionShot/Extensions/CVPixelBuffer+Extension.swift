@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreImage
+import Accelerate
 
 extension CVPixelBuffer{
     
@@ -61,4 +62,47 @@ extension CVPixelBuffer{
         
         return CIImage(cgImage: cgImage)
     }
+}
+
+extension CVPixelBuffer{
+    
+    func clone() -> CVPixelBuffer?{
+        CVPixelBufferLockBaseAddress(self, .readOnly)
+        
+        guard let srcData = CVPixelBufferGetBaseAddress(self) else {
+            print("Failed to get pixel buffer base address")
+            return nil
+        }
+        let width = CVPixelBufferGetWidth(self)
+        let height = CVPixelBufferGetHeight(self)
+        let bytesPerRow = CVPixelBufferGetBytesPerRow(self)
+        let pixelFormat = CVPixelBufferGetPixelFormatType(self)
+        
+        guard let destData = malloc(height * bytesPerRow) else {
+            print("Out of memory")
+            return nil
+        }
+        
+        memcpy(destData, srcData, height * bytesPerRow)
+        CVPixelBufferUnlockBaseAddress(self, .readOnly)
+        
+        let releaseCallback: CVPixelBufferReleaseBytesCallback = { _, ptr in
+            if let ptr = ptr {
+                free(UnsafeMutableRawPointer(mutating: ptr))
+            }
+        }
+        
+        var dstPixelBuffer: CVPixelBuffer?
+        let status = CVPixelBufferCreateWithBytes(nil, width, height,
+                                                  pixelFormat, destData,
+                                                  bytesPerRow, releaseCallback,
+                                                  nil, nil, &dstPixelBuffer)
+        if status != kCVReturnSuccess {
+            print("Failed to create new pixel buffer")
+            free(destData)
+            return nil
+        }
+        return dstPixelBuffer
+    }
+    
 }

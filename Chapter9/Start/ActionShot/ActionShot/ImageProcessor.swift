@@ -35,6 +35,11 @@ class ImageProcessor{
         }
     }()
     
+    /**
+     Any segmentation that has an area less that this (relative to the frame size)
+     is ignored
+     **/
+    var minMaskArea:CGFloat = 0.005
     /* Size our model is expected */
     var targetSize = CGSize(width: 448, height: 448)
     /* Making accessing data thread safe */
@@ -224,7 +229,7 @@ extension ImageProcessor{
     func compositeFrames(){
         
         // Filter frames based on bounding box positioning
-        let selectedIndicies = self.getIndiciesOfBestFrames()
+        var selectedIndicies = self.getIndiciesOfBestFrames()
         
         // If no indicies we returned then exist, passing the final
         // image as a fallback
@@ -240,6 +245,7 @@ extension ImageProcessor{
         
         // Iterate through all indicies compositing the final image
         var finalImage = self.processedImages[selectedIndicies.last!]
+        selectedIndicies.removeLast()
         
         // TODO Composite final image using segments from intermediate frames
         

@@ -41,7 +41,7 @@ public class VideoCapture : NSObject{
     /**
      Frames Per Second; used to throttle capture rate
      */
-    public var fps = 15
+    public var fps = 10
     
     /**
      An object that manages capture activity and coordinates the flow of data from input devices to capture outputs.
@@ -96,6 +96,11 @@ public class VideoCapture : NSObject{
                 return false
         }
         
+        // Remove any existing inputs
+        while captureSession.inputs.count > 0{
+            captureSession.removeInput(captureSession.inputs[0])
+        }
+        
         // Try and create a AVCaptureDeviceInput (sub-class of AVCaptureInput) to capture data from the camera (captureDevice)
         guard let videoInput = try? AVCaptureDeviceInput(device: captureDevice) else {
             print("ERROR: could not create AVCaptureDeviceInput")
@@ -119,6 +124,7 @@ public class VideoCapture : NSObject{
         // Set the deleagte to handle the arrival of new frames (along with the queue)
         videoOutput.setSampleBufferDelegate(self, queue: sessionQueue)
         
+        
         // Add the output stream (if we can)
         if captureSession.canAddOutput(videoOutput) {
             captureSession.addOutput(videoOutput)
@@ -127,6 +133,17 @@ public class VideoCapture : NSObject{
         // We want the buffers to be in portrait orientation otherwise they are rotated by
         // 90 degrees (set this after addOutput:) has been called
         videoOutput.connection(with: AVMediaType.video)?.videoOrientation = .portrait
+        
+        if let _ = captureDevice.activeFormat.videoSupportedFrameRateRanges.filter({ (frameRateRange) -> Bool in
+            return frameRateRange.minFrameRate >= Double(self.fps)
+                && frameRateRange.maxFrameRate <= Double(self.fps)
+        }).first{
+            captureDevice.activeVideoMinFrameDuration = CMTimeMake(1, Int32(self.fps))
+            captureDevice.activeVideoMaxFrameDuration = CMTimeMake(1, Int32(self.fps))
+        }
+        //        for r in captureDevice.activeFormat.videoSupportedFrameRateRanges{
+        //            print(r)
+        //        }
         
         // Commit configuration changes
         captureSession.commitConfiguration()
@@ -176,10 +193,14 @@ extension VideoCapture : AVCaptureVideoDataOutputSampleBufferDelegate{
         if elapsedTime >= CMTimeMake(1, Int32(fps)) {
             // update timestamp
             lastTimestamp = timestamp
-            // get sample buffer's CVImageBuffer
-            let imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)
-            // pass onto the assigned delegate
-            delegate.onFrameCaptured(videoCapture: self, pixelBuffer:imageBuffer, timestamp: timestamp)
+            
+            DispatchQueue.main.async{
+                // get sample buffer's CVImageBuffer
+                let imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)
+                
+                // pass onto the assigned delegate
+                delegate.onFrameCaptured(videoCapture: self, pixelBuffer:imageBuffer, timestamp: timestamp)
+            }
         }
     }
     
@@ -187,6 +208,6 @@ extension VideoCapture : AVCaptureVideoDataOutputSampleBufferDelegate{
      Called when a frame is dropped
      */
     public func captureOutput(_ output: AVCaptureOutput, didDrop sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        // Ignore
+        print("Dropping frame")
     }
 }
