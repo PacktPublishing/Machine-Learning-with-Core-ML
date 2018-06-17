@@ -96,6 +96,11 @@ public class VideoCapture : NSObject{
                 return false
         }
         
+        // Remove any existing inputs
+        while captureSession.inputs.count > 0{
+            captureSession.removeInput(captureSession.inputs[0])
+        }
+        
         // Try and create a AVCaptureDeviceInput (sub-class of AVCaptureInput) to capture data from the camera (captureDevice)
         guard let videoInput = try? AVCaptureDeviceInput(device: captureDevice) else {
             print("ERROR: could not create AVCaptureDeviceInput")

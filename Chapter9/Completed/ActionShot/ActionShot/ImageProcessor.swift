@@ -258,11 +258,6 @@ extension ImageProcessor{
 
 extension ImageProcessor{
     
-    func getDocumentsDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths[0]
-    }
-    
     func compositeFrames(){
         
         // Filter frames based on bounding box positioning
@@ -314,7 +309,7 @@ extension ImageProcessor{
         
         var previousBoundingBox : CGRect?
         
-        let dir = self.getDominateDirection()
+        let dir = self.getDominantDirection()
         
         // Assume the last frame is the 'Hero' frame i.e. work backwards
         for i in (0..<self.processedMasks.count).reversed(){
@@ -352,7 +347,7 @@ extension ImageProcessor{
         return selectedIndicies.reversed()
     }
     
-    func getDominateDirection() -> CGPoint{
+    func getDominantDirection() -> CGPoint{
         var dir = CGPoint(x: 0, y: 0)
         
         var startIdx : Int = 0
@@ -364,7 +359,8 @@ extension ImageProcessor{
             let mask = self.processedMasks[i]
             
             guard let maskBB = mask.getContentBoundingBox(),
-                (maskBB.width * maskBB.height) >= (mask.extent.width * mask.extent.height) * self.minMaskArea
+                (maskBB.width * maskBB.height) >=
+                    (mask.extent.width * mask.extent.height) * self.minMaskArea
                 else {
                     continue
             }
@@ -379,7 +375,8 @@ extension ImageProcessor{
             let mask = self.processedMasks[i]
             
             guard let maskBB = mask.getContentBoundingBox(),
-                (maskBB.width * maskBB.height) >= (mask.extent.width * mask.extent.height) * self.minMaskArea
+                (maskBB.width * maskBB.height) >=
+                    (mask.extent.width * mask.extent.height) * self.minMaskArea
                 else {
                     continue
             }

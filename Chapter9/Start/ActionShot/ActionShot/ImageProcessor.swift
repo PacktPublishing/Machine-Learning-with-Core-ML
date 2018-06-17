@@ -263,10 +263,10 @@ extension ImageProcessor{
         })
     }
 
-    func getDominateDirection() -> CGPoint{
+    func getDominantDirection() -> CGPoint{
         var dir = CGPoint(x: 0, y: 0)
         
-        // TODO detected dominate direction
+        // TODO detected dominant direction
         
         return dir
     }

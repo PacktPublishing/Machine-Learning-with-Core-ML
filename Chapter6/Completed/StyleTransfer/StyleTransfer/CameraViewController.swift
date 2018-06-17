@@ -180,10 +180,11 @@ extension CameraViewController{
     @objc func onFlipCameraButtonTapped(_ sender:UIButton){
         stopCamera()
         
-        videoCapture.cameraPostion == AVCaptureDevice.Position.front ?
-            AVCaptureDevice.Position.back : AVCaptureDevice.Position.front
+        videoCapture.cameraPostion =
+            videoCapture.cameraPostion == AVCaptureDevice.Position.front ?
+                AVCaptureDevice.Position.back : AVCaptureDevice.Position.front
         
-        videoCapture.startCapturing()
+        startCamera()
     }
     
     func showStyleTransferView(image:CIImage){
