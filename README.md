@@ -4,7 +4,7 @@
 
 This is the code repository for [Machine Learning with Core ML](https://www.packtpub.com/big-data-and-business-intelligence/machine-learning-core-ml?utm_source=github&utm_medium=repository&utm_campaign=9781788838290), published by Packt.
 
-* An iOS developer's guide to implementing machine learning in mobile apps	*
+**An iOS developer's guide to implementing machine learning in mobile apps**
 
 ## What is this book about?
 
