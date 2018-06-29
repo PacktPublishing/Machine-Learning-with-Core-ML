@@ -55,13 +55,13 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 * Machine Learning with Swift [[Packt]](https://www.packtpub.com/big-data-and-business-intelligence/machine-learning-swift?utm_source=github&utm_medium=repository&utm_campaign=9781787121515) [[Amazon]](https://www.amazon.com/dp/1787121518)
 
-## Get to Know the Author(s)
+## Get to Know the Author
 **Joshua Newnham**
 Joshua Newnham is a technology lead at a global design firm, Method, focusing on the intersection of design and artificial intelligence (AI), specifically in the areas of computational design and human computer interaction. Prior to this, he was a technical director at Masters of Pie, a virtual reality (VR) and augmented reality (AR) studio focused on building collaborative tools for engineers and creatives.
 
 
 
-## Other books by the authors
+## Other books by the author
 * [Microsoft HoloLens By Example](https://www.packtpub.com/web-development/microsoft-hololens-example?utm_source=github&utm_medium=repository&utm_campaign=9781787126268)
 
 
