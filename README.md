@@ -45,7 +45,7 @@ With the following software and hardware list you can run all code files present
 
 | Chapter  | OS required                   | Software required                        |
 | -------- | ------------------------------------| -----------------------------------|
-| 1-10        |macOS 10.13 or higher                    |Xcode 9.2 or higher ) |
+| 1-10        |macOS 10.13 or higher                    |Xcode 9.2 or higher  |
 
 
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](http://www.packtpub.com/sites/default/files/downloads/MachineLearningwithCoreML_ColorImages.pdf).
