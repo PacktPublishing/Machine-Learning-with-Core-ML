@@ -56,16 +56,14 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 * Machine Learning with Swift [[Packt]](https://www.packtpub.com/big-data-and-business-intelligence/machine-learning-swift?utm_source=github&utm_medium=repository&utm_campaign=9781787121515) [[Amazon]](https://www.amazon.com/dp/1787121518)
 
 ## Get to Know the Author(s)
-**Author Name**
-Bio
+**Joshua Newnham**
+Joshua Newnham is a technology lead at a global design firm, Method, focusing on the intersection of design and artificial intelligence (AI), specifically in the areas of computational design and human computer interaction. Prior to this, he was a technical director at Masters of Pie, a virtual reality (VR) and augmented reality (AR) studio focused on building collaborative tools for engineers and creatives.
 
-**Author Name**
-Bio
 
 
 ## Other books by the authors
-* [Mastering Linux Network Administration](https://www.packtpub.com/networking-and-servers/mastering-linux-network-administration?utm_source=github&utm_medium=repository&utm_campaign=9781784399597)
-* [Linux Mint Essentials](https://www.packtpub.com/networking-and-servers/linux-mint-essentials?utm_source=github&utm_medium=repository&utm_campaign=9781782168157)
+* [Microsoft HoloLens By Example](https://www.packtpub.com/web-development/microsoft-hololens-example?utm_source=github&utm_medium=repository&utm_campaign=9781787126268)
+
 
 ### Suggestions and Feedback
 [Click here](https://docs.google.com/forms/d/e/1FAIpQLSdy7dATC6QmEL81FIUuymZ0Wy9vH1jHkvpY57OiMeKGqib_Ow/viewform) if you have any feedback or suggestions.
