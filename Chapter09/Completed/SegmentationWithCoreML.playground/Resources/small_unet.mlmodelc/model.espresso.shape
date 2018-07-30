@@ -1,0 +1,214 @@
+{
+  "layer_shapes" : {
+    "max_pooling2d_1_output" : {
+      "k" : 8,
+      "w" : 224,
+      "n" : 1,
+      "h" : 224
+    },
+    "up_sampling2d_1_output" : {
+      "k" : 256,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "conv2d_9__activation___output" : {
+      "k" : 128,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "max_pooling2d_5_output" : {
+      "k" : 128,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "conv2d_4__activation___output" : {
+      "k" : 16,
+      "w" : 224,
+      "n" : 1,
+      "h" : 224
+    },
+    "up_sampling2d_5_output" : {
+      "k" : 16,
+      "w" : 448,
+      "n" : 1,
+      "h" : 448
+    },
+    "conv2d_20__activation___output" : {
+      "k" : 16,
+      "w" : 224,
+      "n" : 1,
+      "h" : 224
+    },
+    "conv2d_22__activation___output" : {
+      "k" : 8,
+      "w" : 448,
+      "n" : 1,
+      "h" : 448
+    },
+    "conv2d_5__activation___output" : {
+      "k" : 32,
+      "w" : 112,
+      "n" : 1,
+      "h" : 112
+    },
+    "output" : {
+      "k" : 1,
+      "w" : 448,
+      "n" : 1,
+      "h" : 448
+    },
+    "up_sampling2d_4_output" : {
+      "k" : 32,
+      "w" : 224,
+      "n" : 1,
+      "h" : 224
+    },
+    "conv2d_1__activation___output" : {
+      "k" : 8,
+      "w" : 448,
+      "n" : 1,
+      "h" : 448
+    },
+    "image" : {
+      "k" : 3,
+      "w" : 448,
+      "n" : 1,
+      "h" : 448
+    },
+    "max_pooling2d_4_output" : {
+      "k" : 64,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "conv2d_6__activation___output" : {
+      "k" : 32,
+      "w" : 112,
+      "n" : 1,
+      "h" : 112
+    },
+    "max_pooling2d_3_output" : {
+      "k" : 32,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "conv2d_10__activation___output" : {
+      "k" : 128,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "conv2d_2__activation___output" : {
+      "k" : 8,
+      "w" : 448,
+      "n" : 1,
+      "h" : 448
+    },
+    "conv2d_11__activation___output" : {
+      "k" : 256,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "up_sampling2d_3_output" : {
+      "k" : 64,
+      "w" : 112,
+      "n" : 1,
+      "h" : 112
+    },
+    "conv2d_12__activation___output" : {
+      "k" : 256,
+      "w" : 14,
+      "n" : 1,
+      "h" : 14
+    },
+    "concatenate_5_output" : {
+      "k" : 24,
+      "w" : 448,
+      "n" : 1,
+      "h" : 448
+    },
+    "concatenate_4_output" : {
+      "k" : 48,
+      "w" : 224,
+      "n" : 1,
+      "h" : 224
+    },
+    "conv2d_14__activation___output" : {
+      "k" : 128,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    },
+    "conv2d_7__activation___output" : {
+      "k" : 64,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "conv2d_23_output" : {
+      "k" : 1,
+      "w" : 448,
+      "n" : 1,
+      "h" : 448
+    },
+    "conv2d_16__activation___output" : {
+      "k" : 64,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "up_sampling2d_2_output" : {
+      "k" : 128,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "conv2d_3__activation___output" : {
+      "k" : 16,
+      "w" : 224,
+      "n" : 1,
+      "h" : 224
+    },
+    "conv2d_18__activation___output" : {
+      "k" : 32,
+      "w" : 112,
+      "n" : 1,
+      "h" : 112
+    },
+    "max_pooling2d_2_output" : {
+      "k" : 16,
+      "w" : 112,
+      "n" : 1,
+      "h" : 112
+    },
+    "concatenate_3_output" : {
+      "k" : 96,
+      "w" : 112,
+      "n" : 1,
+      "h" : 112
+    },
+    "concatenate_2_output" : {
+      "k" : 192,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "conv2d_8__activation___output" : {
+      "k" : 64,
+      "w" : 56,
+      "n" : 1,
+      "h" : 56
+    },
+    "concatenate_1_output" : {
+      "k" : 384,
+      "w" : 28,
+      "n" : 1,
+      "h" : 28
+    }
+  }
+}

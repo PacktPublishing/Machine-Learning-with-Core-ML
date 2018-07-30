@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0343157A210FB84A00F6D3BC /* small_unet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 03431579210FB84A00F6D3BC /* small_unet.mlmodel */; };
 		84F566B920C099590002720C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F566B820C099590002720C /* AppDelegate.swift */; };
 		84F566BB20C099590002720C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F566BA20C099590002720C /* CameraViewController.swift */; };
 		84F566C020C0995A0002720C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F566BF20C0995A0002720C /* Assets.xcassets */; };
@@ -17,13 +18,13 @@
 		84F566D320C09FAF0002720C /* CGImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F566D220C09FAF0002720C /* CGImage+Extension.swift */; };
 		84F566D620C0A76D0002720C /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F566D520C0A76D0002720C /* ImageProcessor.swift */; };
 		84F566D820C16CC00002720C /* CVPixelBuffer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F566D720C16CC00002720C /* CVPixelBuffer+Extension.swift */; };
-		84F566DA20C2621A0002720C /* small_unet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 84F566D920C2621A0002720C /* small_unet.mlmodel */; };
 		84F566DC20C2C7D60002720C /* CIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F566DB20C2C7D60002720C /* CIImage+Extension.swift */; };
 		84F566DE20C347420002720C /* CGPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F566DD20C347420002720C /* CGPoint+Extension.swift */; };
 		84F566E020C347920002720C /* CGRect+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F566DF20C347920002720C /* CGRect+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03431579210FB84A00F6D3BC /* small_unet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = small_unet.mlmodel; path = ../../../../CoreMLModels/Chapter9/small_unet.mlmodel; sourceTree = "<group>"; };
 		84F566B520C099590002720C /* ActionShot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActionShot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F566B820C099590002720C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84F566BA20C099590002720C /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -36,7 +37,6 @@
 		84F566D220C09FAF0002720C /* CGImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Extension.swift"; sourceTree = "<group>"; };
 		84F566D520C0A76D0002720C /* ImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
 		84F566D720C16CC00002720C /* CVPixelBuffer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Extension.swift"; sourceTree = "<group>"; };
-		84F566D920C2621A0002720C /* small_unet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = small_unet.mlmodel; path = ../../../../CoreMLModels/Chapter9/small_unet.mlmodel; sourceTree = "<group>"; };
 		84F566DB20C2C7D60002720C /* CIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIImage+Extension.swift"; sourceTree = "<group>"; };
 		84F566DD20C347420002720C /* CGPoint+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extension.swift"; sourceTree = "<group>"; };
 		84F566DF20C347920002720C /* CGRect+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Extension.swift"; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 		84F566B720C099590002720C /* ActionShot */ = {
 			isa = PBXGroup;
 			children = (
-				84F566D920C2621A0002720C /* small_unet.mlmodel */,
+				03431579210FB84A00F6D3BC /* small_unet.mlmodel */,
 				84F566D420C09FB40002720C /* Extensions */,
 				84F566B820C099590002720C /* AppDelegate.swift */,
 				84F566BA20C099590002720C /* CameraViewController.swift */,
@@ -171,8 +171,8 @@
 			files = (
 				84F566CD20C09AFB0002720C /* VideoCapture.swift in Sources */,
 				84F566DE20C347420002720C /* CGPoint+Extension.swift in Sources */,
+				0343157A210FB84A00F6D3BC /* small_unet.mlmodel in Sources */,
 				84F566D820C16CC00002720C /* CVPixelBuffer+Extension.swift in Sources */,
-				84F566DA20C2621A0002720C /* small_unet.mlmodel in Sources */,
 				84F566BB20C099590002720C /* CameraViewController.swift in Sources */,
 				84F566D620C0A76D0002720C /* ImageProcessor.swift in Sources */,
 				84F566B920C099590002720C /* AppDelegate.swift in Sources */,
