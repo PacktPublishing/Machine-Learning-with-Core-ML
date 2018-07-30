@@ -441,8 +441,7 @@ let candiateFrames = getCandiateFrameIndicies(masks: framesAndMasks.map({ (frame
 }), dir:dominantDirection)
 print("Candiate frames \(candiateFrames)")
 
-// 5. Composite frame
-// func compositeFrames(masks:[UIImage], frames:[UIImage], candiateFrames:[Int]) -> UIImage?{
+// 6. Composite frame
 let compositeFrame = compositeFrames(
     masks: framesAndMasks.map({ (frameMaskPair) -> UIImage in
         return frameMaskPair.mask
