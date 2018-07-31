@@ -412,7 +412,9 @@ func compositeFrames(masks:[UIImage], frames:[UIImage], candiateFrames:[Int]) ->
 }
 
 // Get reference to your mov file
-let movFileName = "<ADD YOUR MOV FILE TO THE RESOURCES FOLDER AND ADD THE FILENAME HERE>"
+// ADD YOUR MOV FILE TO THE RESOURCES FOLDER AND ASSIGN THE FILENAME TO THE moveFileName variable
+let movFileName = "Motion-Still-2018-07-29_B"
+
 guard let videoURL = Bundle.main.url(forResource: movFileName, withExtension: "MOV") else{
     fatalError("Missing file")
 }
@@ -441,7 +443,7 @@ let candiateFrames = getCandiateFrameIndicies(masks: framesAndMasks.map({ (frame
 }), dir:dominantDirection)
 print("Candiate frames \(candiateFrames)")
 
-// 6. Composite frame
+// 6 . Composite frame
 let compositeFrame = compositeFrames(
     masks: framesAndMasks.map({ (frameMaskPair) -> UIImage in
         return frameMaskPair.mask
