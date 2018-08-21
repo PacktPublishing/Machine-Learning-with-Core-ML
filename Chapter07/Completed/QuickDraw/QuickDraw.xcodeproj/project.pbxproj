@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		841285651FFAE218009EC3B4 /* sketch_classes.csv in Resources */ = {isa = PBXBuildFile; fileRef = 841285641FFAE218009EC3B4 /* sketch_classes.csv */; };
+		840B2AFF212C9200002D10EC /* sketch_classes.csv in Resources */ = {isa = PBXBuildFile; fileRef = 840B2AFC212C9200002D10EC /* sketch_classes.csv */; };
+		840B2B00212C9200002D10EC /* cnnsketchclassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 840B2AFD212C9200002D10EC /* cnnsketchclassifier.mlmodel */; };
+		840B2B01212C9200002D10EC /* cnnsketchfeatureextractor.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 840B2AFE212C9200002D10EC /* cnnsketchfeatureextractor.mlmodel */; };
 		841285681FFAE5AE009EC3B4 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841285671FFAE5AE009EC3B4 /* CoreML.framework */; };
 		8412856A1FFAE5B4009EC3B4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841285691FFAE5B4009EC3B4 /* CoreVideo.framework */; };
 		8413BB7B1FF5A3FA005A4DA0 /* SketchPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413BB7A1FF5A3FA005A4DA0 /* SketchPreviewCell.swift */; };
@@ -20,14 +22,14 @@
 		84CD69351FEBAB7400C5B7EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CD69341FEBAB7400C5B7EC /* Assets.xcassets */; };
 		84CD69381FEBAB7400C5B7EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CD69361FEBAB7400C5B7EC /* LaunchScreen.storyboard */; };
 		84CD69401FEBAE4F00C5B7EC /* SketchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD693F1FEBAE4F00C5B7EC /* SketchView.swift */; };
-		84DFCCC120B36AF1008A015E /* cnnsketchclassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCCBF20B36AF1008A015E /* cnnsketchclassifier.mlmodel */; };
-		84DFCCC220B36AF1008A015E /* cnnsketchfeatureextractor.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCCC020B36AF1008A015E /* cnnsketchfeatureextractor.mlmodel */; };
 		84FEFA691FFE232F001F1EF4 /* Sketch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FEFA681FFE232F001F1EF4 /* Sketch.swift */; };
 		84FEFA6B1FFED443001F1EF4 /* QueryFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FEFA6A1FFED443001F1EF4 /* QueryFacade.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		841285641FFAE218009EC3B4 /* sketch_classes.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sketch_classes.csv; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/CoreMLModels/Chapter8/sketch_classes.csv"; sourceTree = "<group>"; };
+		840B2AFC212C9200002D10EC /* sketch_classes.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sketch_classes.csv; path = ../../../../CoreMLModels/Chapter7/sketch_classes.csv; sourceTree = "<group>"; };
+		840B2AFD212C9200002D10EC /* cnnsketchclassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = cnnsketchclassifier.mlmodel; path = ../../../../CoreMLModels/Chapter7/cnnsketchclassifier.mlmodel; sourceTree = "<group>"; };
+		840B2AFE212C9200002D10EC /* cnnsketchfeatureextractor.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = cnnsketchfeatureextractor.mlmodel; path = ../../../../CoreMLModels/Chapter7/cnnsketchfeatureextractor.mlmodel; sourceTree = "<group>"; };
 		841285671FFAE5AE009EC3B4 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
 		841285691FFAE5B4009EC3B4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		8413BB7A1FF5A3FA005A4DA0 /* SketchPreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchPreviewCell.swift; sourceTree = "<group>"; };
@@ -42,8 +44,6 @@
 		84CD69371FEBAB7400C5B7EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84CD69391FEBAB7400C5B7EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84CD693F1FEBAE4F00C5B7EC /* SketchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchView.swift; sourceTree = "<group>"; };
-		84DFCCBF20B36AF1008A015E /* cnnsketchclassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = cnnsketchclassifier.mlmodel; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/CoreMLModels/Chapter7/cnnsketchclassifier.mlmodel"; sourceTree = "<group>"; };
-		84DFCCC020B36AF1008A015E /* cnnsketchfeatureextractor.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = cnnsketchfeatureextractor.mlmodel; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/CoreMLModels/Chapter7/cnnsketchfeatureextractor.mlmodel"; sourceTree = "<group>"; };
 		84FEFA681FFE232F001F1EF4 /* Sketch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sketch.swift; sourceTree = "<group>"; };
 		84FEFA6A1FFED443001F1EF4 /* QueryFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryFacade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,9 +90,9 @@
 		84CD692C1FEBAB7400C5B7EC /* QuickDraw */ = {
 			isa = PBXGroup;
 			children = (
-				84DFCCBF20B36AF1008A015E /* cnnsketchclassifier.mlmodel */,
-				84DFCCC020B36AF1008A015E /* cnnsketchfeatureextractor.mlmodel */,
-				841285641FFAE218009EC3B4 /* sketch_classes.csv */,
+				840B2AFD212C9200002D10EC /* cnnsketchclassifier.mlmodel */,
+				840B2AFE212C9200002D10EC /* cnnsketchfeatureextractor.mlmodel */,
+				840B2AFC212C9200002D10EC /* sketch_classes.csv */,
 				84CD692D1FEBAB7400C5B7EC /* AppDelegate.swift */,
 				84CD69311FEBAB7400C5B7EC /* Main.storyboard */,
 				84CD69341FEBAB7400C5B7EC /* Assets.xcassets */,
@@ -171,8 +171,8 @@
 			files = (
 				84CD69381FEBAB7400C5B7EC /* LaunchScreen.storyboard in Resources */,
 				84CD69351FEBAB7400C5B7EC /* Assets.xcassets in Resources */,
+				840B2AFF212C9200002D10EC /* sketch_classes.csv in Resources */,
 				84CD69331FEBAB7400C5B7EC /* Main.storyboard in Resources */,
-				841285651FFAE218009EC3B4 /* sketch_classes.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,11 +187,11 @@
 				8413BB7B1FF5A3FA005A4DA0 /* SketchPreviewCell.swift in Sources */,
 				84C0748D1FF43D9A00E38929 /* SketchViewController.swift in Sources */,
 				845E89C8200A9F7C006E3CDC /* Stroke.swift in Sources */,
-				84DFCCC120B36AF1008A015E /* cnnsketchclassifier.mlmodel in Sources */,
+				840B2B00212C9200002D10EC /* cnnsketchclassifier.mlmodel in Sources */,
 				84C074911FF43E3400E38929 /* BingService.swift in Sources */,
 				84FEFA691FFE232F001F1EF4 /* Sketch.swift in Sources */,
 				84A967EC1FF6D72400F8C8AF /* CIImage.swift in Sources */,
-				84DFCCC220B36AF1008A015E /* cnnsketchfeatureextractor.mlmodel in Sources */,
+				840B2B01212C9200002D10EC /* cnnsketchfeatureextractor.mlmodel in Sources */,
 				84FEFA6B1FFED443001F1EF4 /* QueryFacade.swift in Sources */,
 				84CD692E1FEBAB7400C5B7EC /* AppDelegate.swift in Sources */,
 			);

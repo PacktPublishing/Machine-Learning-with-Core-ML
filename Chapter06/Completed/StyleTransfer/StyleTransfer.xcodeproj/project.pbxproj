@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840B2AF6212C917D002D10EC /* CGImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B2AF4212C917D002D10EC /* CGImage+Extension.swift */; };
+		840B2AF7212C917D002D10EC /* rescale.metal in Sources */ = {isa = PBXBuildFile; fileRef = 840B2AF5212C917D002D10EC /* rescale.metal */; };
+		840B2AF9212C919D002D10EC /* FastStyleTransferVanGoghStarryNight.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 840B2AF8212C919D002D10EC /* FastStyleTransferVanGoghStarryNight.mlmodel */; };
 		845F9481208CA43200866A1A /* CVPixelBuffer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F9480208CA43200866A1A /* CVPixelBuffer+Extension.swift */; };
 		845F9483208CD5C700866A1A /* StyleTransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845F9482208CD5C700866A1A /* StyleTransferViewController.swift */; };
 		845FBC4B20887D0900255A80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FBC4A20887D0900255A80 /* AppDelegate.swift */; };
@@ -20,12 +23,12 @@
 		845FBC6720888E3200255A80 /* ResCropBlockLambda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FBC6620888E3200255A80 /* ResCropBlockLambda.swift */; };
 		845FBC6920888E3C00255A80 /* RescaleOutputLambda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845FBC6820888E3C00255A80 /* RescaleOutputLambda.swift */; };
 		848C8ED9208DE6EB00153870 /* StyleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848C8ED8208DE6EB00153870 /* StyleViewCell.swift */; };
-		84BFA5C020CC29DE00E3F77A /* FastStyleTransferVanGoghStarryNight.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 84BFA5BF20CC29DE00E3F77A /* FastStyleTransferVanGoghStarryNight.mlmodel */; };
-		84DFCC8720B223B8008A015E /* CGImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCC8520B223B8008A015E /* CGImage+Extension.swift */; };
-		84DFCC8820B223B8008A015E /* rescale.metal in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCC8620B223B8008A015E /* rescale.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		840B2AF4212C917D002D10EC /* CGImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImage+Extension.swift"; sourceTree = "<group>"; };
+		840B2AF5212C917D002D10EC /* rescale.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = rescale.metal; sourceTree = "<group>"; };
+		840B2AF8212C919D002D10EC /* FastStyleTransferVanGoghStarryNight.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = FastStyleTransferVanGoghStarryNight.mlmodel; path = ../../../../CoreMLModels/Chapter6/FastStyleTransferVanGoghStarryNight.mlmodel; sourceTree = "<group>"; };
 		845F9480208CA43200866A1A /* CVPixelBuffer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Extension.swift"; sourceTree = "<group>"; };
 		845F9482208CD5C700866A1A /* StyleTransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleTransferViewController.swift; sourceTree = "<group>"; };
 		845FBC4720887D0900255A80 /* StyleTransfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StyleTransfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,9 +44,6 @@
 		845FBC6620888E3200255A80 /* ResCropBlockLambda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResCropBlockLambda.swift; sourceTree = "<group>"; };
 		845FBC6820888E3C00255A80 /* RescaleOutputLambda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RescaleOutputLambda.swift; sourceTree = "<group>"; };
 		848C8ED8208DE6EB00153870 /* StyleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleViewCell.swift; sourceTree = "<group>"; };
-		84BFA5BF20CC29DE00E3F77A /* FastStyleTransferVanGoghStarryNight.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = FastStyleTransferVanGoghStarryNight.mlmodel; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/CoreMLModels/Chapter6/FastStyleTransferVanGoghStarryNight.mlmodel"; sourceTree = "<group>"; };
-		84DFCC8520B223B8008A015E /* CGImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CGImage+Extension.swift"; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter6/Completed/StyleTransfer/StyleTransfer/CGImage+Extension.swift"; sourceTree = "<group>"; };
-		84DFCC8620B223B8008A015E /* rescale.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = rescale.metal; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter6/Completed/StyleTransfer/StyleTransfer/rescale.metal"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +76,9 @@
 		845FBC4920887D0900255A80 /* StyleTransfer */ = {
 			isa = PBXGroup;
 			children = (
-				84BFA5BF20CC29DE00E3F77A /* FastStyleTransferVanGoghStarryNight.mlmodel */,
-				84DFCC8520B223B8008A015E /* CGImage+Extension.swift */,
-				84DFCC8620B223B8008A015E /* rescale.metal */,
+				840B2AF8212C919D002D10EC /* FastStyleTransferVanGoghStarryNight.mlmodel */,
+				840B2AF4212C917D002D10EC /* CGImage+Extension.swift */,
+				840B2AF5212C917D002D10EC /* rescale.metal */,
 				845FBC4A20887D0900255A80 /* AppDelegate.swift */,
 				845FBC4C20887D0900255A80 /* CameraViewController.swift */,
 				845F9482208CD5C700866A1A /* StyleTransferViewController.swift */,
@@ -167,20 +167,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840B2AF9212C919D002D10EC /* FastStyleTransferVanGoghStarryNight.mlmodel in Sources */,
 				845FBC5F2088834800255A80 /* VideoCapture.swift in Sources */,
 				845F9481208CA43200866A1A /* CVPixelBuffer+Extension.swift in Sources */,
 				845FBC5D2088832A00255A80 /* CapturePreviewView.swift in Sources */,
 				845F9483208CD5C700866A1A /* StyleTransferViewController.swift in Sources */,
 				848C8ED9208DE6EB00153870 /* StyleViewCell.swift in Sources */,
 				845FBC6920888E3C00255A80 /* RescaleOutputLambda.swift in Sources */,
-				84BFA5C020CC29DE00E3F77A /* FastStyleTransferVanGoghStarryNight.mlmodel in Sources */,
 				845FBC612088836D00255A80 /* CIImage+Extension.swift in Sources */,
 				845FBC4D20887D0900255A80 /* CameraViewController.swift in Sources */,
 				845FBC63208883A500255A80 /* ImageProcessor.swift in Sources */,
 				845FBC6720888E3200255A80 /* ResCropBlockLambda.swift in Sources */,
 				845FBC4B20887D0900255A80 /* AppDelegate.swift in Sources */,
-				84DFCC8820B223B8008A015E /* rescale.metal in Sources */,
-				84DFCC8720B223B8008A015E /* CGImage+Extension.swift in Sources */,
+				840B2AF7212C917D002D10EC /* rescale.metal in Sources */,
+				840B2AF6212C917D002D10EC /* CGImage+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -84,7 +84,7 @@ extension SearchResultsViewController{
     func initUI(){
         
         // Add activity indicator
-        let activityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        let activityIndicatorView = UIActivityIndicatorView(style: .gray)
         activityIndicatorView.center = self.view.center
         activityIndicatorView.hidesWhenStopped = true
         self.view.addSubview(activityIndicatorView)

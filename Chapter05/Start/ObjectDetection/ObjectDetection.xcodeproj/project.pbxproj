@@ -7,29 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		846FEC8720CC784D00518BD9 /* CIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FEC8620CC784D00518BD9 /* CIImage+Extension.swift */; };
+		843BC5DA212C7F0F008CE13B /* PhotoSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BC5D9212C7F0F008CE13B /* PhotoSearcher.swift */; };
+		843BC5DC212C7F1B008CE13B /* ObjectDetectionImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BC5DB212C7F1B008CE13B /* ObjectDetectionImageView.swift */; };
+		843BC5DF212C7F2A008CE13B /* CGPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BC5DD212C7F29008CE13B /* CGPoint+Extension.swift */; };
+		843BC5E0212C7F2A008CE13B /* CIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BC5DE212C7F2A008CE13B /* CIImage+Extension.swift */; };
 		84DFCCAA20B36A07008A015E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCCA920B36A07008A015E /* AppDelegate.swift */; };
 		84DFCCAC20B36A07008A015E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCCAB20B36A07008A015E /* SearchViewController.swift */; };
 		84DFCCB120B36A09008A015E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DFCCB020B36A09008A015E /* Assets.xcassets */; };
 		84DFCCB420B36A09008A015E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DFCCB220B36A09008A015E /* LaunchScreen.storyboard */; };
 		84DFCCC820B36BAF008A015E /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCCC720B36BAF008A015E /* Math.swift */; };
 		84DFCCCA20B36C3F008A015E /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCCC920B36C3F008A015E /* SearchResultsViewController.swift */; };
-		84DFCCCD20B36C62008A015E /* CGPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCCCC20B36C62008A015E /* CGPoint+Extension.swift */; };
 		84DFCCCF20B36C73008A015E /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCCCE20B36C73008A015E /* UIImage+Extension.swift */; };
 		84DFCCD120B36C83008A015E /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCCD020B36C83008A015E /* Array+Extension.swift */; };
 		84DFCCD320B36C98008A015E /* CGRect+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCCD220B36C98008A015E /* CGRect+Extension.swift */; };
 		84DFCCD720B36CC6008A015E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCCD620B36CC6008A015E /* UIColor+Extension.swift */; };
-		84DFCCDA20B36D60008A015E /* ObjectDetectionImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCCD920B36D60008A015E /* ObjectDetectionImageView.swift */; };
 		84DFCCDC20B36F4F008A015E /* SearchInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCCDB20B36F4F008A015E /* SearchInputView.swift */; };
 		84DFCCDE20B36F5D008A015E /* IconViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCCDD20B36F5D008A015E /* IconViewCell.swift */; };
 		84DFCCE020B36F6F008A015E /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCCDF20B36F6F008A015E /* PhotoViewCell.swift */; };
-		84DFCCE220B36F8E008A015E /* PhotoSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCCE120B36F8E008A015E /* PhotoSearcher.swift */; };
 		84DFCCE620B36FBC008A015E /* DataObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCCE520B36FBC008A015E /* DataObjects.swift */; };
 		84DFCCE820B36FE3008A015E /* YOLOFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCCE720B36FE3008A015E /* YOLOFacade.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		846FEC8620CC784D00518BD9 /* CIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CIImage+Extension.swift"; path = "../../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter5/Start/ObjectDetection/ObjectDetection/Extensions/CIImage+Extension.swift"; sourceTree = "<group>"; };
+		843BC5D9212C7F0F008CE13B /* PhotoSearcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSearcher.swift; sourceTree = "<group>"; };
+		843BC5DB212C7F1B008CE13B /* ObjectDetectionImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectDetectionImageView.swift; sourceTree = "<group>"; };
+		843BC5DD212C7F29008CE13B /* CGPoint+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extension.swift"; sourceTree = "<group>"; };
+		843BC5DE212C7F2A008CE13B /* CIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CIImage+Extension.swift"; sourceTree = "<group>"; };
 		84DFCCA620B36A07008A015E /* ObjectDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84DFCCA920B36A07008A015E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84DFCCAB20B36A07008A015E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -38,16 +41,13 @@
 		84DFCCB520B36A09008A015E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84DFCCC720B36BAF008A015E /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		84DFCCC920B36C3F008A015E /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
-		84DFCCCC20B36C62008A015E /* CGPoint+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CGPoint+Extension.swift"; path = "../../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter5/Start/ObjectDetection/ObjectDetection/Extensions/CGPoint+Extension.swift"; sourceTree = "<group>"; };
 		84DFCCCE20B36C73008A015E /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		84DFCCD020B36C83008A015E /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
 		84DFCCD220B36C98008A015E /* CGRect+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Extension.swift"; sourceTree = "<group>"; };
 		84DFCCD620B36CC6008A015E /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
-		84DFCCD920B36D60008A015E /* ObjectDetectionImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ObjectDetectionImageView.swift; path = "../../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter5/Start/ObjectDetection/ObjectDetection/Views/ObjectDetectionImageView.swift"; sourceTree = "<group>"; };
 		84DFCCDB20B36F4F008A015E /* SearchInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInputView.swift; sourceTree = "<group>"; };
 		84DFCCDD20B36F5D008A015E /* IconViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconViewCell.swift; sourceTree = "<group>"; };
 		84DFCCDF20B36F6F008A015E /* PhotoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewCell.swift; sourceTree = "<group>"; };
-		84DFCCE120B36F8E008A015E /* PhotoSearcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoSearcher.swift; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter5/Start/ObjectDetection/ObjectDetection/PhotoSearcher.swift"; sourceTree = "<group>"; };
 		84DFCCE520B36FBC008A015E /* DataObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataObjects.swift; sourceTree = "<group>"; };
 		84DFCCE720B36FE3008A015E /* YOLOFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YOLOFacade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +82,7 @@
 		84DFCCA820B36A07008A015E /* ObjectDetection */ = {
 			isa = PBXGroup;
 			children = (
+				843BC5D9212C7F0F008CE13B /* PhotoSearcher.swift */,
 				84DFCCE420B36FA4008A015E /* ViewControllers */,
 				84DFCCE320B36F95008A015E /* Utils */,
 				84DFCCD820B36D57008A015E /* Views */,
@@ -91,7 +92,6 @@
 				84DFCCB220B36A09008A015E /* LaunchScreen.storyboard */,
 				84DFCCB520B36A09008A015E /* Info.plist */,
 				84DFCCE520B36FBC008A015E /* DataObjects.swift */,
-				84DFCCE120B36F8E008A015E /* PhotoSearcher.swift */,
 				84DFCCE720B36FE3008A015E /* YOLOFacade.swift */,
 			);
 			path = ObjectDetection;
@@ -100,12 +100,12 @@
 		84DFCCCB20B36C50008A015E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				84DFCCCC20B36C62008A015E /* CGPoint+Extension.swift */,
+				843BC5DD212C7F29008CE13B /* CGPoint+Extension.swift */,
+				843BC5DE212C7F2A008CE13B /* CIImage+Extension.swift */,
 				84DFCCCE20B36C73008A015E /* UIImage+Extension.swift */,
 				84DFCCD020B36C83008A015E /* Array+Extension.swift */,
 				84DFCCD220B36C98008A015E /* CGRect+Extension.swift */,
 				84DFCCD620B36CC6008A015E /* UIColor+Extension.swift */,
-				846FEC8620CC784D00518BD9 /* CIImage+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -113,7 +113,7 @@
 		84DFCCD820B36D57008A015E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				84DFCCD920B36D60008A015E /* ObjectDetectionImageView.swift */,
+				843BC5DB212C7F1B008CE13B /* ObjectDetectionImageView.swift */,
 				84DFCCDB20B36F4F008A015E /* SearchInputView.swift */,
 				84DFCCDD20B36F5D008A015E /* IconViewCell.swift */,
 				84DFCCDF20B36F6F008A015E /* PhotoViewCell.swift */,
@@ -211,17 +211,17 @@
 				84DFCCAC20B36A07008A015E /* SearchViewController.swift in Sources */,
 				84DFCCE620B36FBC008A015E /* DataObjects.swift in Sources */,
 				84DFCCE820B36FE3008A015E /* YOLOFacade.swift in Sources */,
-				846FEC8720CC784D00518BD9 /* CIImage+Extension.swift in Sources */,
 				84DFCCD320B36C98008A015E /* CGRect+Extension.swift in Sources */,
+				843BC5DC212C7F1B008CE13B /* ObjectDetectionImageView.swift in Sources */,
 				84DFCCCA20B36C3F008A015E /* SearchResultsViewController.swift in Sources */,
 				84DFCCD720B36CC6008A015E /* UIColor+Extension.swift in Sources */,
+				843BC5DF212C7F2A008CE13B /* CGPoint+Extension.swift in Sources */,
 				84DFCCAA20B36A07008A015E /* AppDelegate.swift in Sources */,
 				84DFCCE020B36F6F008A015E /* PhotoViewCell.swift in Sources */,
-				84DFCCDA20B36D60008A015E /* ObjectDetectionImageView.swift in Sources */,
 				84DFCCCF20B36C73008A015E /* UIImage+Extension.swift in Sources */,
+				843BC5E0212C7F2A008CE13B /* CIImage+Extension.swift in Sources */,
+				843BC5DA212C7F0F008CE13B /* PhotoSearcher.swift in Sources */,
 				84DFCCD120B36C83008A015E /* Array+Extension.swift in Sources */,
-				84DFCCE220B36F8E008A015E /* PhotoSearcher.swift in Sources */,
-				84DFCCCD20B36C62008A015E /* CGPoint+Extension.swift in Sources */,
 				84DFCCDE20B36F5D008A015E /* IconViewCell.swift in Sources */,
 				84DFCCC820B36BAF008A015E /* Math.swift in Sources */,
 				84DFCCDC20B36F4F008A015E /* SearchInputView.swift in Sources */,

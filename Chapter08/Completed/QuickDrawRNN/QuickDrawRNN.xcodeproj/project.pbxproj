@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840B2B0B212C9259002D10EC /* BingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B2B02212C9259002D10EC /* BingService.swift */; };
+		840B2B0C212C9259002D10EC /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B2B03212C9259002D10EC /* DateExtension.swift */; };
+		840B2B0D212C9259002D10EC /* CIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B2B04212C9259002D10EC /* CIImage.swift */; };
+		840B2B0E212C9259002D10EC /* SketchPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B2B05212C9259002D10EC /* SketchPreviewCell.swift */; };
+		840B2B0F212C9259002D10EC /* SketchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B2B06212C9259002D10EC /* SketchViewController.swift */; };
+		840B2B10212C9259002D10EC /* QueryFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B2B07212C9259002D10EC /* QueryFacade.swift */; };
+		840B2B11212C9259002D10EC /* SketchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B2B08212C9259002D10EC /* SketchView.swift */; };
+		840B2B12212C9259002D10EC /* Sketch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B2B09212C9259002D10EC /* Sketch.swift */; };
+		840B2B13212C9259002D10EC /* Stroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B2B0A212C9259002D10EC /* Stroke.swift */; };
+		840B2B16212C9276002D10EC /* quickdraw.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 840B2B14212C9276002D10EC /* quickdraw.mlmodel */; };
+		840B2B17212C9276002D10EC /* sketch_classes.csv in Resources */ = {isa = PBXBuildFile; fileRef = 840B2B15212C9276002D10EC /* sketch_classes.csv */; };
 		848DA025203A258500A4590A /* CGPointRNNExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DA024203A258500A4590A /* CGPointRNNExtension.swift */; };
 		848DA027203A25C000A4590A /* StrokeRNNExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DA026203A25C000A4590A /* StrokeRNNExtension.swift */; };
 		848DA029203A271000A4590A /* StrokeSketchExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848DA028203A271000A4590A /* StrokeSketchExtension.swift */; };
@@ -15,19 +26,20 @@
 		84DCB8F1202915A200612D25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DCB8EF202915A200612D25 /* Main.storyboard */; };
 		84DCB8F3202915A200612D25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84DCB8F2202915A200612D25 /* Assets.xcassets */; };
 		84DCB8F6202915A200612D25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DCB8F4202915A200612D25 /* LaunchScreen.storyboard */; };
-		84DFCC9420B22429008A015E /* SketchPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCC8B20B22428008A015E /* SketchPreviewCell.swift */; };
-		84DFCC9520B22429008A015E /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCC8C20B22428008A015E /* DateExtension.swift */; };
-		84DFCC9620B22429008A015E /* SketchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCC8D20B22428008A015E /* SketchView.swift */; };
-		84DFCC9720B22429008A015E /* BingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCC8E20B22428008A015E /* BingService.swift */; };
-		84DFCC9820B22429008A015E /* Stroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCC8F20B22428008A015E /* Stroke.swift */; };
-		84DFCC9920B22429008A015E /* Sketch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCC9020B22428008A015E /* Sketch.swift */; };
-		84DFCC9A20B22429008A015E /* SketchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCC9120B22428008A015E /* SketchViewController.swift */; };
-		84DFCC9B20B22429008A015E /* CIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCC9220B22428008A015E /* CIImage.swift */; };
-		84DFCC9C20B22429008A015E /* QueryFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCC9320B22428008A015E /* QueryFacade.swift */; };
-		84DFCCC420B36B27008A015E /* quickdraw.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCCC320B36B27008A015E /* quickdraw.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		840B2B02212C9259002D10EC /* BingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BingService.swift; sourceTree = "<group>"; };
+		840B2B03212C9259002D10EC /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		840B2B04212C9259002D10EC /* CIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CIImage.swift; sourceTree = "<group>"; };
+		840B2B05212C9259002D10EC /* SketchPreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SketchPreviewCell.swift; sourceTree = "<group>"; };
+		840B2B06212C9259002D10EC /* SketchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SketchViewController.swift; sourceTree = "<group>"; };
+		840B2B07212C9259002D10EC /* QueryFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryFacade.swift; sourceTree = "<group>"; };
+		840B2B08212C9259002D10EC /* SketchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SketchView.swift; sourceTree = "<group>"; };
+		840B2B09212C9259002D10EC /* Sketch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sketch.swift; sourceTree = "<group>"; };
+		840B2B0A212C9259002D10EC /* Stroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stroke.swift; sourceTree = "<group>"; };
+		840B2B14212C9276002D10EC /* quickdraw.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = quickdraw.mlmodel; path = ../../../../CoreMLModels/Chapter8/quickdraw.mlmodel; sourceTree = "<group>"; };
+		840B2B15212C9276002D10EC /* sketch_classes.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sketch_classes.csv; path = ../../../../CoreMLModels/Chapter8/sketch_classes.csv; sourceTree = "<group>"; };
 		848DA024203A258500A4590A /* CGPointRNNExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointRNNExtension.swift; sourceTree = "<group>"; };
 		848DA026203A25C000A4590A /* StrokeRNNExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeRNNExtension.swift; sourceTree = "<group>"; };
 		848DA028203A271000A4590A /* StrokeSketchExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeSketchExtension.swift; sourceTree = "<group>"; };
@@ -38,16 +50,6 @@
 		84DCB8F2202915A200612D25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84DCB8F5202915A200612D25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84DCB8F7202915A200612D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84DFCC8B20B22428008A015E /* SketchPreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SketchPreviewCell.swift; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter8/Completed/QuickDrawRNN/QuickDrawRNN/SketchPreviewCell.swift"; sourceTree = "<group>"; };
-		84DFCC8C20B22428008A015E /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter8/Completed/QuickDrawRNN/QuickDrawRNN/DateExtension.swift"; sourceTree = "<group>"; };
-		84DFCC8D20B22428008A015E /* SketchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SketchView.swift; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter8/Completed/QuickDrawRNN/QuickDrawRNN/SketchView.swift"; sourceTree = "<group>"; };
-		84DFCC8E20B22428008A015E /* BingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BingService.swift; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter8/Completed/QuickDrawRNN/QuickDrawRNN/BingService.swift"; sourceTree = "<group>"; };
-		84DFCC8F20B22428008A015E /* Stroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stroke.swift; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter8/Completed/QuickDrawRNN/QuickDrawRNN/Stroke.swift"; sourceTree = "<group>"; };
-		84DFCC9020B22428008A015E /* Sketch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sketch.swift; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter8/Completed/QuickDrawRNN/QuickDrawRNN/Sketch.swift"; sourceTree = "<group>"; };
-		84DFCC9120B22428008A015E /* SketchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SketchViewController.swift; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter8/Completed/QuickDrawRNN/QuickDrawRNN/SketchViewController.swift"; sourceTree = "<group>"; };
-		84DFCC9220B22428008A015E /* CIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CIImage.swift; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter8/Completed/QuickDrawRNN/QuickDrawRNN/CIImage.swift"; sourceTree = "<group>"; };
-		84DFCC9320B22428008A015E /* QueryFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QueryFacade.swift; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter8/Completed/QuickDrawRNN/QuickDrawRNN/QueryFacade.swift"; sourceTree = "<group>"; };
-		84DFCCC320B36B27008A015E /* quickdraw.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = quickdraw.mlmodel; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/CoreMLModels/Chapter8/quickdraw.mlmodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,16 +82,17 @@
 		84DCB8EA202915A200612D25 /* QuickDrawRNN */ = {
 			isa = PBXGroup;
 			children = (
-				84DFCCC320B36B27008A015E /* quickdraw.mlmodel */,
-				84DFCC8E20B22428008A015E /* BingService.swift */,
-				84DFCC9220B22428008A015E /* CIImage.swift */,
-				84DFCC8C20B22428008A015E /* DateExtension.swift */,
-				84DFCC9320B22428008A015E /* QueryFacade.swift */,
-				84DFCC9020B22428008A015E /* Sketch.swift */,
-				84DFCC8B20B22428008A015E /* SketchPreviewCell.swift */,
-				84DFCC8D20B22428008A015E /* SketchView.swift */,
-				84DFCC9120B22428008A015E /* SketchViewController.swift */,
-				84DFCC8F20B22428008A015E /* Stroke.swift */,
+				840B2B14212C9276002D10EC /* quickdraw.mlmodel */,
+				840B2B15212C9276002D10EC /* sketch_classes.csv */,
+				840B2B02212C9259002D10EC /* BingService.swift */,
+				840B2B04212C9259002D10EC /* CIImage.swift */,
+				840B2B03212C9259002D10EC /* DateExtension.swift */,
+				840B2B07212C9259002D10EC /* QueryFacade.swift */,
+				840B2B09212C9259002D10EC /* Sketch.swift */,
+				840B2B05212C9259002D10EC /* SketchPreviewCell.swift */,
+				840B2B08212C9259002D10EC /* SketchView.swift */,
+				840B2B06212C9259002D10EC /* SketchViewController.swift */,
+				840B2B0A212C9259002D10EC /* Stroke.swift */,
 				84DCB8EB202915A200612D25 /* AppDelegate.swift */,
 				84DCB8ED202915A200612D25 /* ViewController.swift */,
 				84DCB8EF202915A200612D25 /* Main.storyboard */,
@@ -165,6 +168,7 @@
 				84DCB8F6202915A200612D25 /* LaunchScreen.storyboard in Resources */,
 				84DCB8F3202915A200612D25 /* Assets.xcassets in Resources */,
 				84DCB8F1202915A200612D25 /* Main.storyboard in Resources */,
+				840B2B17212C9276002D10EC /* sketch_classes.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,21 +179,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84DFCC9B20B22429008A015E /* CIImage.swift in Sources */,
-				84DFCC9520B22429008A015E /* DateExtension.swift in Sources */,
-				84DFCC9720B22429008A015E /* BingService.swift in Sources */,
+				840B2B0C212C9259002D10EC /* DateExtension.swift in Sources */,
+				840B2B12212C9259002D10EC /* Sketch.swift in Sources */,
 				84DCB8EE202915A200612D25 /* ViewController.swift in Sources */,
-				84DFCCC420B36B27008A015E /* quickdraw.mlmodel in Sources */,
-				84DFCC9820B22429008A015E /* Stroke.swift in Sources */,
-				84DFCC9A20B22429008A015E /* SketchViewController.swift in Sources */,
+				840B2B0E212C9259002D10EC /* SketchPreviewCell.swift in Sources */,
+				840B2B13212C9259002D10EC /* Stroke.swift in Sources */,
 				84DCB8EC202915A200612D25 /* AppDelegate.swift in Sources */,
-				84DFCC9920B22429008A015E /* Sketch.swift in Sources */,
-				84DFCC9420B22429008A015E /* SketchPreviewCell.swift in Sources */,
-				84DFCC9620B22429008A015E /* SketchView.swift in Sources */,
+				840B2B10212C9259002D10EC /* QueryFacade.swift in Sources */,
+				840B2B0F212C9259002D10EC /* SketchViewController.swift in Sources */,
 				848DA027203A25C000A4590A /* StrokeRNNExtension.swift in Sources */,
+				840B2B11212C9259002D10EC /* SketchView.swift in Sources */,
+				840B2B0D212C9259002D10EC /* CIImage.swift in Sources */,
 				848DA029203A271000A4590A /* StrokeSketchExtension.swift in Sources */,
-				84DFCC9C20B22429008A015E /* QueryFacade.swift in Sources */,
+				840B2B0B212C9259002D10EC /* BingService.swift in Sources */,
 				848DA025203A258500A4590A /* CGPointRNNExtension.swift in Sources */,
+				840B2B16212C9276002D10EC /* quickdraw.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

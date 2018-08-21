@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		846FEC8B20CC935800518BD9 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FEC8A20CC935800518BD9 /* UIDevice+Extension.swift */; };
-		84DFCC7020B21EF6008A015E /* CaptureVideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCC6B20B21EF5008A015E /* CaptureVideoPreviewView.swift */; };
-		84DFCC7120B21EF6008A015E /* CIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCC6C20B21EF5008A015E /* CIImageExtension.swift */; };
-		84DFCC7220B21EF6008A015E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCC6D20B21EF5008A015E /* UIColorExtension.swift */; };
-		84DFCC7320B21EF6008A015E /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCC6E20B21EF5008A015E /* VideoCapture.swift */; };
-		84DFCC7420B21EF6008A015E /* EmotionVisualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCC6F20B21EF6008A015E /* EmotionVisualizerView.swift */; };
+		8489096B212C7C2000AB1017 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84890965212C7C1F00AB1017 /* UIColorExtension.swift */; };
+		8489096C212C7C2000AB1017 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84890966212C7C2000AB1017 /* VideoCapture.swift */; };
+		8489096D212C7C2000AB1017 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84890967212C7C2000AB1017 /* UIDevice+Extension.swift */; };
+		8489096E212C7C2000AB1017 /* CaptureVideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84890968212C7C2000AB1017 /* CaptureVideoPreviewView.swift */; };
+		8489096F212C7C2000AB1017 /* EmotionVisualizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84890969212C7C2000AB1017 /* EmotionVisualizerView.swift */; };
+		84890970212C7C2000AB1017 /* CIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8489096A212C7C2000AB1017 /* CIImageExtension.swift */; };
 		84F792E72044B54900DB4402 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F792E62044B54900DB4402 /* AppDelegate.swift */; };
 		84F792E92044B54900DB4402 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F792E82044B54900DB4402 /* ViewController.swift */; };
 		84F792EC2044B54900DB4402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F792EA2044B54900DB4402 /* Main.storyboard */; };
@@ -21,12 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		846FEC8A20CC935800518BD9 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIDevice+Extension.swift"; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter4/Start/FacialEmotionDetection/FacialEmotionDetection/UIDevice+Extension.swift"; sourceTree = "<group>"; };
-		84DFCC6B20B21EF5008A015E /* CaptureVideoPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CaptureVideoPreviewView.swift; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter4/Start/FacialEmotionDetection/FacialEmotionDetection/CaptureVideoPreviewView.swift"; sourceTree = "<group>"; };
-		84DFCC6C20B21EF5008A015E /* CIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CIImageExtension.swift; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter4/Start/FacialEmotionDetection/FacialEmotionDetection/CIImageExtension.swift"; sourceTree = "<group>"; };
-		84DFCC6D20B21EF5008A015E /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter4/Start/FacialEmotionDetection/FacialEmotionDetection/UIColorExtension.swift"; sourceTree = "<group>"; };
-		84DFCC6E20B21EF5008A015E /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoCapture.swift; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter4/Start/FacialEmotionDetection/FacialEmotionDetection/VideoCapture.swift"; sourceTree = "<group>"; };
-		84DFCC6F20B21EF6008A015E /* EmotionVisualizerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmotionVisualizerView.swift; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter4/Start/FacialEmotionDetection/FacialEmotionDetection/EmotionVisualizerView.swift"; sourceTree = "<group>"; };
+		84890965212C7C1F00AB1017 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		84890966212C7C2000AB1017 /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		84890967212C7C2000AB1017 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		84890968212C7C2000AB1017 /* CaptureVideoPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureVideoPreviewView.swift; sourceTree = "<group>"; };
+		84890969212C7C2000AB1017 /* EmotionVisualizerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmotionVisualizerView.swift; sourceTree = "<group>"; };
+		8489096A212C7C2000AB1017 /* CIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CIImageExtension.swift; sourceTree = "<group>"; };
 		84F792E32044B54900DB4402 /* FacialEmotionDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacialEmotionDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F792E62044B54900DB4402 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84F792E82044B54900DB4402 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,18 +66,18 @@
 		84F792E52044B54900DB4402 /* FacialEmotionDetection */ = {
 			isa = PBXGroup;
 			children = (
-				84DFCC6F20B21EF6008A015E /* EmotionVisualizerView.swift */,
-				84DFCC6B20B21EF5008A015E /* CaptureVideoPreviewView.swift */,
-				84DFCC6C20B21EF5008A015E /* CIImageExtension.swift */,
-				84DFCC6D20B21EF5008A015E /* UIColorExtension.swift */,
-				84DFCC6E20B21EF5008A015E /* VideoCapture.swift */,
+				8489096A212C7C2000AB1017 /* CIImageExtension.swift */,
+				84890968212C7C2000AB1017 /* CaptureVideoPreviewView.swift */,
+				84890969212C7C2000AB1017 /* EmotionVisualizerView.swift */,
+				84890967212C7C2000AB1017 /* UIDevice+Extension.swift */,
+				84890965212C7C1F00AB1017 /* UIColorExtension.swift */,
+				84890966212C7C2000AB1017 /* VideoCapture.swift */,
 				84F792E62044B54900DB4402 /* AppDelegate.swift */,
 				84F792E82044B54900DB4402 /* ViewController.swift */,
 				84F792EA2044B54900DB4402 /* Main.storyboard */,
 				84F792ED2044B54900DB4402 /* Assets.xcassets */,
 				84F792EF2044B54900DB4402 /* LaunchScreen.storyboard */,
 				84F792F22044B54900DB4402 /* Info.plist */,
-				846FEC8A20CC935800518BD9 /* UIDevice+Extension.swift */,
 			);
 			path = FacialEmotionDetection;
 			sourceTree = "<group>";
@@ -154,14 +154,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84DFCC7020B21EF6008A015E /* CaptureVideoPreviewView.swift in Sources */,
-				846FEC8B20CC935800518BD9 /* UIDevice+Extension.swift in Sources */,
 				84F792E92044B54900DB4402 /* ViewController.swift in Sources */,
-				84DFCC7420B21EF6008A015E /* EmotionVisualizerView.swift in Sources */,
-				84DFCC7320B21EF6008A015E /* VideoCapture.swift in Sources */,
+				84890970212C7C2000AB1017 /* CIImageExtension.swift in Sources */,
+				8489096D212C7C2000AB1017 /* UIDevice+Extension.swift in Sources */,
+				8489096F212C7C2000AB1017 /* EmotionVisualizerView.swift in Sources */,
+				8489096B212C7C2000AB1017 /* UIColorExtension.swift in Sources */,
+				8489096C212C7C2000AB1017 /* VideoCapture.swift in Sources */,
+				8489096E212C7C2000AB1017 /* CaptureVideoPreviewView.swift in Sources */,
 				84F792E72044B54900DB4402 /* AppDelegate.swift in Sources */,
-				84DFCC7120B21EF6008A015E /* CIImageExtension.swift in Sources */,
-				84DFCC7220B21EF6008A015E /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

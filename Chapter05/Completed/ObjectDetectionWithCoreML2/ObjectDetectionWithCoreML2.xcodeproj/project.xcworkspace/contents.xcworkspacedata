@@ -2,6 +2,21 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ObjectDetectionWithCoreML2.xcodeproj">
+      location = "group:/Users/joshua.newnham/Dropbox/my projects/Machine-Learning-with-Core-ML/Chapter05/Completed/ObjectDetectionWithCoreML2/AppDelegate.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/joshua.newnham/Dropbox/my projects/Machine-Learning-with-Core-ML/Chapter05/Completed/ObjectDetectionWithCoreML2/DataObjects.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/joshua.newnham/Dropbox/my projects/Machine-Learning-with-Core-ML/Chapter05/Completed/ObjectDetectionWithCoreML2/Math.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/joshua.newnham/Dropbox/my projects/Machine-Learning-with-Core-ML/Chapter05/Completed/ObjectDetectionWithCoreML2/PhotoSearcher.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/joshua.newnham/Dropbox/my projects/Machine-Learning-with-Core-ML/Chapter05/Completed/ObjectDetectionWithCoreML2/YOLOFacade.swift">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

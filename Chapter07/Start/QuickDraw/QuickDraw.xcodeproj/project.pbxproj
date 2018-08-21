@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840B2AFB212C91D1002D10EC /* Stroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840B2AFA212C91D1002D10EC /* Stroke.swift */; };
 		841285681FFAE5AE009EC3B4 /* CoreML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841285671FFAE5AE009EC3B4 /* CoreML.framework */; };
 		8412856A1FFAE5B4009EC3B4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841285691FFAE5B4009EC3B4 /* CoreVideo.framework */; };
 		8413BB7B1FF5A3FA005A4DA0 /* SketchPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413BB7A1FF5A3FA005A4DA0 /* SketchPreviewCell.swift */; };
@@ -18,12 +19,12 @@
 		84CD69351FEBAB7400C5B7EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CD69341FEBAB7400C5B7EC /* Assets.xcassets */; };
 		84CD69381FEBAB7400C5B7EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CD69361FEBAB7400C5B7EC /* LaunchScreen.storyboard */; };
 		84CD69401FEBAE4F00C5B7EC /* SketchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD693F1FEBAE4F00C5B7EC /* SketchView.swift */; };
-		84DFCC8A20B223D8008A015E /* Stroke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFCC8920B223D8008A015E /* Stroke.swift */; };
 		84FEFA691FFE232F001F1EF4 /* Sketch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FEFA681FFE232F001F1EF4 /* Sketch.swift */; };
 		84FEFA6B1FFED443001F1EF4 /* QueryFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FEFA6A1FFED443001F1EF4 /* QueryFacade.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		840B2AFA212C91D1002D10EC /* Stroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stroke.swift; sourceTree = "<group>"; };
 		841285671FFAE5AE009EC3B4 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
 		841285691FFAE5B4009EC3B4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		8413BB7A1FF5A3FA005A4DA0 /* SketchPreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchPreviewCell.swift; sourceTree = "<group>"; };
@@ -37,7 +38,6 @@
 		84CD69371FEBAB7400C5B7EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84CD69391FEBAB7400C5B7EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84CD693F1FEBAE4F00C5B7EC /* SketchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchView.swift; sourceTree = "<group>"; };
-		84DFCC8920B223D8008A015E /* Stroke.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stroke.swift; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter7/Start/QuickDraw/QuickDraw/Stroke.swift"; sourceTree = "<group>"; };
 		84FEFA681FFE232F001F1EF4 /* Sketch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sketch.swift; sourceTree = "<group>"; };
 		84FEFA6A1FFED443001F1EF4 /* QueryFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryFacade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,7 +84,7 @@
 		84CD692C1FEBAB7400C5B7EC /* QuickDraw */ = {
 			isa = PBXGroup;
 			children = (
-				84DFCC8920B223D8008A015E /* Stroke.swift */,
+				840B2AFA212C91D1002D10EC /* Stroke.swift */,
 				84CD692D1FEBAB7400C5B7EC /* AppDelegate.swift */,
 				84CD69311FEBAB7400C5B7EC /* Main.storyboard */,
 				84CD69341FEBAB7400C5B7EC /* Assets.xcassets */,
@@ -179,7 +179,7 @@
 				84C074911FF43E3400E38929 /* BingService.swift in Sources */,
 				84FEFA691FFE232F001F1EF4 /* Sketch.swift in Sources */,
 				84A967EC1FF6D72400F8C8AF /* CIImage.swift in Sources */,
-				84DFCC8A20B223D8008A015E /* Stroke.swift in Sources */,
+				840B2AFB212C91D1002D10EC /* Stroke.swift in Sources */,
 				84FEFA6B1FFED443001F1EF4 /* QueryFacade.swift in Sources */,
 				84CD692E1FEBAB7400C5B7EC /* AppDelegate.swift in Sources */,
 			);

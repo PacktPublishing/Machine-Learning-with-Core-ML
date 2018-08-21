@@ -8,41 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		84131C0520CC604E004BD220 /* DataObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08D9720CC5EA70067BCC2 /* DataObjects.swift */; };
-		84131C1720CC613D004BD220 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131C1520CC613D004BD220 /* SearchViewController.swift */; };
-		84131C1820CC613D004BD220 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131C1620CC613D004BD220 /* SearchResultsViewController.swift */; };
 		84131C1920CC6148004BD220 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08D9420CC5EA70067BCC2 /* Math.swift */; };
 		84131C1A20CC614B004BD220 /* PhotoSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08D9820CC5EA70067BCC2 /* PhotoSearcher.swift */; };
 		84131C1B20CC6150004BD220 /* YOLOFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08D9320CC5EA70067BCC2 /* YOLOFacade.swift */; };
-		84131C2220CC616B004BD220 /* ObjectDetectionImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131C1E20CC616B004BD220 /* ObjectDetectionImageView.swift */; };
-		84131C2320CC616B004BD220 /* IconViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131C1F20CC616B004BD220 /* IconViewCell.swift */; };
-		84131C2420CC616B004BD220 /* SearchInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131C2020CC616B004BD220 /* SearchInputView.swift */; };
-		84131C2520CC616B004BD220 /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131C2120CC616B004BD220 /* PhotoViewCell.swift */; };
-		84131C2B20CC6177004BD220 /* CGRect+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131C2620CC6177004BD220 /* CGRect+Extension.swift */; };
-		84131C2C20CC6177004BD220 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131C2720CC6177004BD220 /* Array+Extension.swift */; };
-		84131C2D20CC6177004BD220 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131C2820CC6177004BD220 /* UIImage+Extension.swift */; };
-		84131C2E20CC6177004BD220 /* CGPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131C2920CC6177004BD220 /* CGPoint+Extension.swift */; };
-		84131C2F20CC6177004BD220 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131C2A20CC6177004BD220 /* UIColor+Extension.swift */; };
-		84131C3320CC6E85004BD220 /* CIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84131C3220CC6E85004BD220 /* CIImage+Extension.swift */; };
-		846FEC8520CC77DE00518BD9 /* tinyyolo_voc2007.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 846FEC8420CC77DE00518BD9 /* tinyyolo_voc2007.mlmodel */; };
+		843BC5FB212C8007008CE13B /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BC5EF212C8006008CE13B /* SearchResultsViewController.swift */; };
+		843BC5FC212C8007008CE13B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BC5F0212C8006008CE13B /* SearchViewController.swift */; };
+		843BC5FD212C8007008CE13B /* IconViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BC5F1212C8006008CE13B /* IconViewCell.swift */; };
+		843BC5FE212C8007008CE13B /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BC5F2212C8006008CE13B /* Array+Extension.swift */; };
+		843BC5FF212C8007008CE13B /* CGRect+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BC5F3212C8006008CE13B /* CGRect+Extension.swift */; };
+		843BC600212C8007008CE13B /* CIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BC5F4212C8006008CE13B /* CIImage+Extension.swift */; };
+		843BC601212C8007008CE13B /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BC5F5212C8006008CE13B /* UIImage+Extension.swift */; };
+		843BC602212C8007008CE13B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BC5F6212C8006008CE13B /* UIColor+Extension.swift */; };
+		843BC603212C8007008CE13B /* ObjectDetectionImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BC5F7212C8006008CE13B /* ObjectDetectionImageView.swift */; };
+		843BC604212C8007008CE13B /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BC5F8212C8007008CE13B /* PhotoViewCell.swift */; };
+		843BC605212C8007008CE13B /* CGPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BC5F9212C8007008CE13B /* CGPoint+Extension.swift */; };
+		843BC606212C8007008CE13B /* SearchInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BC5FA212C8007008CE13B /* SearchInputView.swift */; };
+		843BC608212C8021008CE13B /* tinyyolo_voc2007.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 843BC607212C8020008CE13B /* tinyyolo_voc2007.mlmodel */; };
 		84A08D8020CC5E2B0067BCC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08D7F20CC5E2B0067BCC2 /* AppDelegate.swift */; };
 		84A08D8720CC5E2C0067BCC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A08D8620CC5E2C0067BCC2 /* Assets.xcassets */; };
 		84A08D8A20CC5E2C0067BCC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A08D8820CC5E2C0067BCC2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		84131C1520CC613D004BD220 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter5/Completed/ObjectDetectionWithCoreML2/ObjectDetectionWithCoreML2/ViewControllers/SearchViewController.swift"; sourceTree = "<group>"; };
-		84131C1620CC613D004BD220 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResultsViewController.swift; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter5/Completed/ObjectDetectionWithCoreML2/ObjectDetectionWithCoreML2/ViewControllers/SearchResultsViewController.swift"; sourceTree = "<group>"; };
-		84131C1E20CC616B004BD220 /* ObjectDetectionImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObjectDetectionImageView.swift; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter5/Completed/ObjectDetectionWithCoreML2/ObjectDetectionWithCoreML2/Views/ObjectDetectionImageView.swift"; sourceTree = "<group>"; };
-		84131C1F20CC616B004BD220 /* IconViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IconViewCell.swift; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter5/Completed/ObjectDetectionWithCoreML2/ObjectDetectionWithCoreML2/Views/IconViewCell.swift"; sourceTree = "<group>"; };
-		84131C2020CC616B004BD220 /* SearchInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchInputView.swift; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter5/Completed/ObjectDetectionWithCoreML2/ObjectDetectionWithCoreML2/Views/SearchInputView.swift"; sourceTree = "<group>"; };
-		84131C2120CC616B004BD220 /* PhotoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoViewCell.swift; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter5/Completed/ObjectDetectionWithCoreML2/ObjectDetectionWithCoreML2/Views/PhotoViewCell.swift"; sourceTree = "<group>"; };
-		84131C2620CC6177004BD220 /* CGRect+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CGRect+Extension.swift"; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter5/Completed/ObjectDetectionWithCoreML2/ObjectDetectionWithCoreML2/Extensions/CGRect+Extension.swift"; sourceTree = "<group>"; };
-		84131C2720CC6177004BD220 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Array+Extension.swift"; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter5/Completed/ObjectDetectionWithCoreML2/ObjectDetectionWithCoreML2/Extensions/Array+Extension.swift"; sourceTree = "<group>"; };
-		84131C2820CC6177004BD220 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Extension.swift"; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter5/Completed/ObjectDetectionWithCoreML2/ObjectDetectionWithCoreML2/Extensions/UIImage+Extension.swift"; sourceTree = "<group>"; };
-		84131C2920CC6177004BD220 /* CGPoint+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CGPoint+Extension.swift"; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter5/Completed/ObjectDetectionWithCoreML2/ObjectDetectionWithCoreML2/Extensions/CGPoint+Extension.swift"; sourceTree = "<group>"; };
-		84131C2A20CC6177004BD220 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter5/Completed/ObjectDetectionWithCoreML2/ObjectDetectionWithCoreML2/Extensions/UIColor+Extension.swift"; sourceTree = "<group>"; };
-		84131C3220CC6E85004BD220 /* CIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CIImage+Extension.swift"; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/Chapter5/Completed/ObjectDetectionWithCoreML2/ObjectDetectionWithCoreML2/Extensions/CIImage+Extension.swift"; sourceTree = "<group>"; };
-		846FEC8420CC77DE00518BD9 /* tinyyolo_voc2007.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = tinyyolo_voc2007.mlmodel; path = "../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Projects/CoreMLModels/Chapter5CoreML2/tinyyolo_voc2007.mlmodel"; sourceTree = "<group>"; };
+		843BC5EF212C8006008CE13B /* SearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		843BC5F0212C8006008CE13B /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		843BC5F1212C8006008CE13B /* IconViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconViewCell.swift; sourceTree = "<group>"; };
+		843BC5F2212C8006008CE13B /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		843BC5F3212C8006008CE13B /* CGRect+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Extension.swift"; sourceTree = "<group>"; };
+		843BC5F4212C8006008CE13B /* CIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CIImage+Extension.swift"; sourceTree = "<group>"; };
+		843BC5F5212C8006008CE13B /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		843BC5F6212C8006008CE13B /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		843BC5F7212C8006008CE13B /* ObjectDetectionImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectDetectionImageView.swift; sourceTree = "<group>"; };
+		843BC5F8212C8007008CE13B /* PhotoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewCell.swift; sourceTree = "<group>"; };
+		843BC5F9212C8007008CE13B /* CGPoint+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extension.swift"; sourceTree = "<group>"; };
+		843BC5FA212C8007008CE13B /* SearchInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchInputView.swift; sourceTree = "<group>"; };
+		843BC607212C8020008CE13B /* tinyyolo_voc2007.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = tinyyolo_voc2007.mlmodel; path = ../../../CoreMLModels/Chapter5CoreML2/tinyyolo_voc2007.mlmodel; sourceTree = "<group>"; };
 		84A08D7C20CC5E2B0067BCC2 /* ObjectDetectionWithCoreML2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectDetectionWithCoreML2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A08D7F20CC5E2B0067BCC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84A08D8620CC5E2C0067BCC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		84A08D7320CC5E2B0067BCC2 = {
 			isa = PBXGroup;
 			children = (
-				846FEC8420CC77DE00518BD9 /* tinyyolo_voc2007.mlmodel */,
+				843BC607212C8020008CE13B /* tinyyolo_voc2007.mlmodel */,
 				84A08D7E20CC5E2B0067BCC2 /* ObjectDetectionWithCoreML2 */,
 				84A08D7D20CC5E2B0067BCC2 /* Products */,
 			);
@@ -85,18 +85,18 @@
 		84A08D7E20CC5E2B0067BCC2 /* ObjectDetectionWithCoreML2 */ = {
 			isa = PBXGroup;
 			children = (
-				84131C3220CC6E85004BD220 /* CIImage+Extension.swift */,
-				84131C2720CC6177004BD220 /* Array+Extension.swift */,
-				84131C2920CC6177004BD220 /* CGPoint+Extension.swift */,
-				84131C2620CC6177004BD220 /* CGRect+Extension.swift */,
-				84131C2A20CC6177004BD220 /* UIColor+Extension.swift */,
-				84131C2820CC6177004BD220 /* UIImage+Extension.swift */,
-				84131C1F20CC616B004BD220 /* IconViewCell.swift */,
-				84131C1E20CC616B004BD220 /* ObjectDetectionImageView.swift */,
-				84131C2120CC616B004BD220 /* PhotoViewCell.swift */,
-				84131C2020CC616B004BD220 /* SearchInputView.swift */,
-				84131C1620CC613D004BD220 /* SearchResultsViewController.swift */,
-				84131C1520CC613D004BD220 /* SearchViewController.swift */,
+				843BC5F2212C8006008CE13B /* Array+Extension.swift */,
+				843BC5F9212C8007008CE13B /* CGPoint+Extension.swift */,
+				843BC5F3212C8006008CE13B /* CGRect+Extension.swift */,
+				843BC5F4212C8006008CE13B /* CIImage+Extension.swift */,
+				843BC5F1212C8006008CE13B /* IconViewCell.swift */,
+				843BC5F7212C8006008CE13B /* ObjectDetectionImageView.swift */,
+				843BC5F8212C8007008CE13B /* PhotoViewCell.swift */,
+				843BC5FA212C8007008CE13B /* SearchInputView.swift */,
+				843BC5EF212C8006008CE13B /* SearchResultsViewController.swift */,
+				843BC5F0212C8006008CE13B /* SearchViewController.swift */,
+				843BC5F6212C8006008CE13B /* UIColor+Extension.swift */,
+				843BC5F5212C8006008CE13B /* UIImage+Extension.swift */,
 				84A08D9720CC5EA70067BCC2 /* DataObjects.swift */,
 				84A08D9420CC5EA70067BCC2 /* Math.swift */,
 				84A08D9820CC5EA70067BCC2 /* PhotoSearcher.swift */,
@@ -179,24 +179,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843BC600212C8007008CE13B /* CIImage+Extension.swift in Sources */,
+				843BC5FE212C8007008CE13B /* Array+Extension.swift in Sources */,
+				843BC603212C8007008CE13B /* ObjectDetectionImageView.swift in Sources */,
+				843BC602212C8007008CE13B /* UIColor+Extension.swift in Sources */,
+				843BC5FB212C8007008CE13B /* SearchResultsViewController.swift in Sources */,
 				84131C0520CC604E004BD220 /* DataObjects.swift in Sources */,
-				846FEC8520CC77DE00518BD9 /* tinyyolo_voc2007.mlmodel in Sources */,
+				843BC5FC212C8007008CE13B /* SearchViewController.swift in Sources */,
+				843BC5FD212C8007008CE13B /* IconViewCell.swift in Sources */,
 				84131C1B20CC6150004BD220 /* YOLOFacade.swift in Sources */,
 				84131C1A20CC614B004BD220 /* PhotoSearcher.swift in Sources */,
-				84131C2F20CC6177004BD220 /* UIColor+Extension.swift in Sources */,
-				84131C2B20CC6177004BD220 /* CGRect+Extension.swift in Sources */,
-				84131C1720CC613D004BD220 /* SearchViewController.swift in Sources */,
-				84131C2320CC616B004BD220 /* IconViewCell.swift in Sources */,
-				84131C2220CC616B004BD220 /* ObjectDetectionImageView.swift in Sources */,
-				84131C3320CC6E85004BD220 /* CIImage+Extension.swift in Sources */,
+				843BC5FF212C8007008CE13B /* CGRect+Extension.swift in Sources */,
 				84A08D8020CC5E2B0067BCC2 /* AppDelegate.swift in Sources */,
-				84131C1820CC613D004BD220 /* SearchResultsViewController.swift in Sources */,
 				84131C1920CC6148004BD220 /* Math.swift in Sources */,
-				84131C2C20CC6177004BD220 /* Array+Extension.swift in Sources */,
-				84131C2D20CC6177004BD220 /* UIImage+Extension.swift in Sources */,
-				84131C2420CC616B004BD220 /* SearchInputView.swift in Sources */,
-				84131C2E20CC6177004BD220 /* CGPoint+Extension.swift in Sources */,
-				84131C2520CC616B004BD220 /* PhotoViewCell.swift in Sources */,
+				843BC605212C8007008CE13B /* CGPoint+Extension.swift in Sources */,
+				843BC604212C8007008CE13B /* PhotoViewCell.swift in Sources */,
+				843BC601212C8007008CE13B /* UIImage+Extension.swift in Sources */,
+				843BC608212C8021008CE13B /* tinyyolo_voc2007.mlmodel in Sources */,
+				843BC606212C8007008CE13B /* SearchInputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
