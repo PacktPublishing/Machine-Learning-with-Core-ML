@@ -1,6 +1,6 @@
 # Machine Learning with Core ML
 
-<a href="https://www.packtpub.com/big-data-and-business-intelligence/machine-learning-core-ml?utm_source=github&utm_medium=repository&utm_campaign=9781788838290"><img src="https://d255esdrn735hr.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/B09544_MockupCover.png" alt="Machine Learning with Core ML" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/big-data-and-business-intelligence/machine-learning-core-ml?utm_source=github&utm_medium=repository&utm_campaign=9781788838290"><img src="https://www.packtpub.com/sites/default/files/B09544.png" alt="Machine Learning with Core ML" height="256px" align="right"></a>
 
 This is the code repository for [Machine Learning with Core ML](https://www.packtpub.com/big-data-and-business-intelligence/machine-learning-core-ml?utm_source=github&utm_medium=repository&utm_campaign=9781788838290), published by Packt.
 
