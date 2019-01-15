@@ -13,17 +13,17 @@ let sam : [String:Float] = ["The Martian" : 4.0, "Blade Runner" : 4.0, "The Matr
 
 let chris : [String:Float] = ["The Bourne Identity" : 4.0, "The Martian" : 5.0, "Blade Runner" : 5.0, "Inception" : 4.0]
 
-print(calcSimilarity(
-    userRatingsA: sam,
-    userRatingsB: jo
-))
+let samJoSimilarity = calcSimilarity(userRatingsA: sam, userRatingsB: jo)
+print("sam-jo similarity \(samJoSimilarity)")
 
-print(calcSimilarity(
-    userRatingsA: sam,
-    userRatingsB: sam
-))
+let joSamSimilarity = calcSimilarity(userRatingsA: jo, userRatingsB: sam)
+print("jo-sam similarity \(joSamSimilarity)")
 
-print(calcSimilarity(
-    userRatingsA: sam,
-    userRatingsB: chris
-))
+let samSamSimilarity = calcSimilarity(userRatingsA: sam, userRatingsB: sam)
+print("sam-sam similarity \(samSamSimilarity)")
+
+let samChrisSimilarity = calcSimilarity(userRatingsA: sam, userRatingsB: chris)
+print("sam-chris similarity \(samChrisSimilarity)")
+
+let chrisSamSimilarity = calcSimilarity(userRatingsA: chris, userRatingsB: sam)
+print("chris-sam similarity \(chrisSamSimilarity)")
