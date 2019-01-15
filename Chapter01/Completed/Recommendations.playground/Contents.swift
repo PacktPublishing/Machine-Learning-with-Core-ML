@@ -2,18 +2,9 @@
 
 import UIKit
 
-
-func calcSimilarity(userRatingsA: [String:Float], userRatingsB:[String:Float]) -> Float{
-    let distance = userRatingsA.map( { (movieRating) -> Float in
-        if userRatingsB[movieRating.key] == nil{
-            return 0
-        }
-        let diff = movieRating.value - (userRatingsB[movieRating.key] ?? 0)
-        return diff * diff
-    }).reduce(0) { (prev, curr) -> Float in
-        return prev + curr
-    }.squareRoot()
-    return 1 / (1 + distance)
+func calcSimilarity(userRatingsA: [String:Float], userRatingsB: [String:Float]) -> Float {
+    let distance = userRatingsA.merging(userRatingsB){$0 - $1}.map{$0.value}.map{$0 * $0}.reduce(0.0, +).squareRoot()
+    return 1.0 / (1.0 + distance)
 }
 
 let jo : [String:Float] = ["Monsters Inc." : 5.0, "The Bourne Identity" : 2.0, "The Martian" : 2.0, "Blade Runner" : 1.0]
