@@ -4,15 +4,27 @@ import UIKit
 
 
 func calcSimilarity(userRatingsA: [String:Float], userRatingsB:[String:Float]) -> Float{
-    let distance = userRatingsA.map( { (movieRating) -> Float in
-        if userRatingsB[movieRating.key] == nil{
-            return 0
+    // Only compare movies that both users have in common
+    let matches = Set(Array(userRatingsA.keys)).intersection(Set(Array(userRatingsB.keys)))
+    
+    // Guard against instances where there are no shared movies (return 0.0
+    // indicating low similarity)
+    guard matches.count > 0 else{
+        return 0.0
+    }
+    
+    let distance = matches.map { (sharedMovieTitle) -> Float in
+        guard let userARating = userRatingsA[sharedMovieTitle],
+            let userBRating = userRatingsB[sharedMovieTitle] else{
+                fatalError("Invalid state")
         }
-        let diff = movieRating.value - (userRatingsB[movieRating.key] ?? 0)
-        return diff * diff
-    }).reduce(0) { (prev, curr) -> Float in
-        return prev + curr
-    }.squareRoot()
+        
+        return  pow(userARating - userBRating, 2)
+    }.reduce(0) { (acc, val) -> Float in
+        return acc + val
+    }.squareRoot() // squareRoot can be omitted (ie optional)
+    
+    // Return the inverse such that 1.0 represents a perfect match and 0.0 no match 
     return 1 / (1 + distance)
 }
 
@@ -22,9 +34,16 @@ let sam : [String:Float] = ["The Martian" : 4.0, "Blade Runner" : 4.0, "The Matr
 
 let chris : [String:Float] = ["The Bourne Identity" : 4.0, "The Martian" : 5.0, "Blade Runner" : 5.0, "Inception" : 4.0]
 
+let lisa : [String:Float] = ["Titanic" : 5.0, "The wold on Wall Street" : 2.0, "The Beach" : 5.0, "Catch Me If You Can" : 3.0]
+
 print(calcSimilarity(
     userRatingsA: sam,
     userRatingsB: jo
+))
+
+print(calcSimilarity(
+    userRatingsA: jo,
+    userRatingsB: sam
 ))
 
 print(calcSimilarity(
@@ -35,4 +54,9 @@ print(calcSimilarity(
 print(calcSimilarity(
     userRatingsA: sam,
     userRatingsB: chris
+))
+
+print(calcSimilarity(
+    userRatingsA: sam,
+    userRatingsB: lisa
 ))

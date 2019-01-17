@@ -18,7 +18,7 @@ import UIKit
 import PlaygroundSupport
 
 // Create a view that we will use to render the digits (and their weights)
-let view = DigitView(frame: CGRect(x: 20, y: 20, width: 200, height: 200))
+let view = DigitView(frame: CGRect(x: 20, y: 20, width: 500, height: 500))
 
 // Load the data; limiting number to sampleSize
 let sampleSize : UInt32 = 20
@@ -26,7 +26,7 @@ let sampleSize : UInt32 = 20
 let dataset = MNIST.loadData(limit:sampleSize)
 
 // Pull out a example we will use for demonstration purposes
-let testLabel = 0
+let testLabel = 7
 let testIndex = Int(dataset.labels.indices.filter({dataset.labels[$0] == UInt8(testLabel)})[0])
 
 // lets display the first label and corresponding image
@@ -40,7 +40,7 @@ let x = Matrix(trainX)
 let y = Matrix(trainY)
 
 // train our model
-let w = train(x: x, y: y, learnignRate: 0.005, epochs: 200)
+let w = train(x: x, y: y, learnignRate: 0.005, epochs: 500)
 
 // make a prediction
 let (prob, pred) = predict(x: x.row(index: testIndex), w: w)

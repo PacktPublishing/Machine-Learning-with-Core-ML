@@ -75,8 +75,15 @@ public class DigitView : UIView{
                         let pixelColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: alpha)
                         ctx.setFillColor(pixelColor.cgColor)
                     } else{
-                        let colourIntensity = 1.0 - pixel/255.0 // invert
-                        let pixelColor = UIColor(red: colourIntensity, green: 0.0, blue: 0.0, alpha: 1.0)
+                        //let colourIntensity = 1.0 - pixel/255.0 // invert
+                        var colourIntensity = pixel/255.0 // invert
+                        
+                        colourIntensity = colourIntensity > 0.5 ?
+                            colourIntensity : 0.0
+                        let pixelColor = UIColor(red: 0.0,
+                                                 green: 0.0,
+                                                 blue: colourIntensity,
+                                                 alpha: 1.0)
                         ctx.setFillColor(pixelColor.cgColor)
                     }
                 } else{
