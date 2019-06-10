@@ -73,7 +73,7 @@ func train(
     
     let N = CGFloat(x.count) // number of data points
     
-    for epoch in 0...epochs{
+    for epoch in 0..<epochs{
         // TODO: create variable to store this epoch's gradient for b and w
         
         /**

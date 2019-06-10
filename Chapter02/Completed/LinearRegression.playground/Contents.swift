@@ -102,7 +102,7 @@ func train(
     
     let N = CGFloat(x.count) // number of data points
     
-    for epoch in 0...epochs{
+    for epoch in 0..<epochs{
         var sumError : CGFloat = 0.0
         var bGradient : CGFloat = 0.0
         var wGradient : CGFloat = 0.0
