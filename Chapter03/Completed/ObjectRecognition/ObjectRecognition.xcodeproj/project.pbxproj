@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35D995FE2267935600D22A22 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 35D995FD2267935600D22A22 /* Inceptionv3.mlmodel */; };
 		845DA74A1FCEB2D400B8D0C6 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DA7491FCEB2D400B8D0C6 /* VideoCapture.swift */; };
 		84890964212C7BB500AB1017 /* CaptureVideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84890963212C7BB500AB1017 /* CaptureVideoPreviewView.swift */; };
 		84B1B1271FCD582100AD83F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1B1261FCD582100AD83F7 /* AppDelegate.swift */; };
@@ -14,10 +15,10 @@
 		84B1B12C1FCD582100AD83F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B1B12A1FCD582100AD83F7 /* Main.storyboard */; };
 		84B1B12E1FCD582100AD83F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B1B12D1FCD582100AD83F7 /* Assets.xcassets */; };
 		84B1B1391FCD622900AD83F7 /* CIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B1B1381FCD622900AD83F7 /* CIImage.swift */; };
-		84F14A5620D3FD79003B1505 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 84F14A5520D3FD79003B1505 /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35D995FD2267935600D22A22 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		845DA7491FCEB2D400B8D0C6 /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
 		845DA74C1FCEB2F400B8D0C6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		845DA74D1FCEB2FB00B8D0C6 /* CoreML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreML.framework; path = System/Library/Frameworks/CoreML.framework; sourceTree = SDKROOT; };
@@ -30,7 +31,6 @@
 		84B1B12D1FCD582100AD83F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84B1B1321FCD582100AD83F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84B1B1381FCD622900AD83F7 /* CIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIImage.swift; sourceTree = "<group>"; };
-		84F14A5520D3FD79003B1505 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = "../../../../../../../../../Joshua.Newnham/Dropbox/Method - Personal/Machine Learning with CoreML/Machine-Learning-with-Core-ML/CoreMLModels/Inceptionv3.mlmodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				84890963212C7BB500AB1017 /* CaptureVideoPreviewView.swift */,
-				84F14A5520D3FD79003B1505 /* Inceptionv3.mlmodel */,
+				35D995FD2267935600D22A22 /* Inceptionv3.mlmodel */,
 				84B1B1261FCD582100AD83F7 /* AppDelegate.swift */,
 				84B1B1281FCD582100AD83F7 /* ViewController.swift */,
 				84B1B12A1FCD582100AD83F7 /* Main.storyboard */,
@@ -159,8 +159,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				845DA74A1FCEB2D400B8D0C6 /* VideoCapture.swift in Sources */,
+				35D995FE2267935600D22A22 /* Inceptionv3.mlmodel in Sources */,
 				84890964212C7BB500AB1017 /* CaptureVideoPreviewView.swift in Sources */,
-				84F14A5620D3FD79003B1505 /* Inceptionv3.mlmodel in Sources */,
 				84B1B1391FCD622900AD83F7 /* CIImage.swift in Sources */,
 				84B1B1291FCD582100AD83F7 /* ViewController.swift in Sources */,
 				84B1B1271FCD582100AD83F7 /* AppDelegate.swift in Sources */,
